@@ -2,11 +2,42 @@
 layout: post                                                        
 title: "Posts to Write"
 ---
-- The Power of Habit
-- Combat and Other Shenanigans
+
 - The Boys in the Boat
 - Better by Atul Gawanda (a)
 - Who Gets What and Why
 - Being Mortal (a)
 - A Nation Rising (a)
 - Lean In
+- Lion in the Whitehouse: A Life of Theodore Roosevelt by Aida D. Donald
+- Lords of Finance: The Bankers Who Broke the World by Liaquat Ahamed
+- The Gene: An Intimate History
+  - by Siddhartha Mukherjee
+  - 3/31/2017
+- The Girl with the Lower Back Tattoo
+  - by Amy Schumer
+  - 3/31/2017
+- Sailing Alone Around the World
+  - by Joshua Slocum
+  - 3/31/2017
+- The Autobiography of Benjamin Franklin
+  - by Benjamin Franklin
+  - 2/4/2016
+- Rabid: A Cultural History of the Wolf
+  - by Bill Wasik
+  - 2/12/2016
+- The Iraq War
+  - by John Keegan
+  - 2/16/2016
+- The Quest: Energy, Security anbd the Remaking of the Modern World
+  - by Daniel Yergen
+  - 2/24/2016
+- America's Hidden History: Untold Tales of the First Pilgrams...
+  - by Kenneth C. Davis
+  - 3/5/2017
+- Command and Control: Nuclear Weapons, the Dam...
+  - Eric Schlosser
+  - 4/10/2016
+- Dark Money: The Hidden History of the B...
+  - by Jane Mayer
+  - 4/11/2016
