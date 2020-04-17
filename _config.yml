@@ -1,14 +1,61 @@
-# Site settings
-title: Kam Lasater - Thoughts and Musings
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Personal info
+name: Kam Lasater
+title: Software Entrepreneur
 email: ckl@seekayel.com
-description: >
-  Thoughts and musing of Kam Lasater. All thoughts my own™
-baseurl: "" 
-url: "http://kamlasater.com"
+website: kamlasater.com
+
+# Social links
 twitter_username: seekayel
 github_username:  seekayel
+linkedin_username: kamlasater
+# youtube_username: globalmtb
+
+# About Section
+# about_title: About Me
+about_profile_image: images/kam-lasater.png
+about_content: | # this will include new lines to allow paragraphs
+  Motivated to build and grow things.
+
+  In professional life that means software and software companies.
+
+  Currently focused on hatching my next business.
+
+# Projects Section
+# projects_title: Projects
+
+# Experience Section
+# experience_title: Experience
+
+# Education Section
+# educaton_title: Education
+
+# More Section
+more_title: Certifications
+more_content: | # this will include new lines to allow paragraphs
+  Amazon Web Services
+  - [AWS Solutions Architect Professional](https://www.certmetrics.com/amazon/public/badge.aspx?i=4&t=c&d=2019-12-20&ci=AWS00532053)
+  - AWS Devops Professional
+  - AWS Networking Specialist
+  - AWS Security Specialist
+  - AWS Big Data Specialist
+  - AWS Machine Learning Specialist
+  - AWS Solutions Architect Associate
+  - AWS Sysops Associate
+  - AWS Developer Associate
+
+# Footer
+footer_show_references: false
 
 # Build settings
-markdown: kramdown
+remote_theme: sproogen/resume-theme
 
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

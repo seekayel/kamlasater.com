@@ -1,0 +1,42 @@
+- layout: left
+  company: Black Knight Financial Services
+  link: bkfs.com
+  job_title: Senior Development Manager
+  dates: June 2018 - April 2020
+  description: |
+    - Exceeded organization sales targets for 2.5 yrs
+    - Serverless AI product launched with 3 of top 5 US banks
+    - 9 AWS Certifications in 14 months
+    - Completed PCI SAQ-d process with assessor
+    - Grew Engineering team from 6 to 19
+
+- layout: left
+  company: HeavyWater
+  link: heavywater.com
+  job_title: Chief Technology Officier
+  dates: January 2018 - June 2018
+  description: |
+    - Grew dev team from 3 to 6
+    - Launched product
+    - [Acquired by Black Knight](https://technical.ly/philly/2018/06/05/heavywater-acquired-by-florida-based-ai/).
+
+- layout: left
+  company: LegalScience
+  link: https://legalscience.com
+  job_title: Chief Executive Officier
+  dates: April 2017 - December 2018
+  description: |
+    - Closed first commercial data deal
+    - Awarded 2+ million dollar SBIR grant
+    - Implemented sales and marketing tracking tools
+    - Implemented modern CICD practices
+
+- layout: left
+  company: SeeClickFix
+  link: https://seeclickfix.com
+  job_title: Cofounder
+  dates: January 2008 - October 2019
+  description: |
+    - From idea to successful cash exit
+    - Raised seed and two institutional rounds
+    - Developed SaaS business model
