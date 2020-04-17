@@ -1,8 +1,23 @@
 - layout: top-middle
-  name: Super awesome project
-  link: github.com/sproogen
-  github: sproogen/resume-theme
-  quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+  name: SeeClickFix
+  link: seeclickfix.com
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    Cofounder of community driven government engagement and 311 platform. Venture backed and acquired in 2019.
+
+- layout: top-middle
+  name: MakeHaven
+  link: https://www.makehaven.org/
+  description: | # this will include new lines to allow paragraphs
+    Cofounder of non-profit makerspace.
+
+- layout: top-middle
+  name: New Haven Bank (nee Start Bank)
+  link: https://www.newhavenbank.com/
+  description: | # this will include new lines to allow paragraphs
+    Board member of CDFI bank. Member of audit commitee.
+
+- layout: top-middle
+  name: Piro Farm
+  link: https://pirofarm-blog.tumblr.com/
+  description: | # this will include new lines to allow paragraphs
+    Experiments in gardening and hands on activities.
