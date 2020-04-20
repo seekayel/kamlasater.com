@@ -3,7 +3,8 @@
   dates: 1999 - 2003
   qualification: BS Electrical and Computer Engineering
   description: | # this will include new lines to allow paragraphs
-    I focused my course work at the interface between hardware and software. Taking Operating Systems, Embedded Systems, Advanced Digital Design and Advanced Prototyping Lab.
+    I focused on the interface between hardware and software.
+    - Course work: Operating Systems, Embedded Systems, Advanced Digital Design and Advanced Prototyping Lab
     - Teaching Assistant: Embedded Systems and Advanced Digital Design
     - Languages: C, Verilog, Java
     - Tools: XEmacs, Make, CVS
