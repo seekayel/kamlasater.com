@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: seekayel/kamlasater.com
 favicon: images/favicon.ico
 
 # Personal info
@@ -13,6 +13,13 @@ twitter_username: seekayel
 github_username:  seekayel
 linkedin_username: kamlasater
 # youtube_username: globalmtb
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+gtag: "UA-164058306-1"
+# google_analytics: "UA-00000000-0"
+
 
 # About Section
 # about_title: About Me
@@ -53,7 +60,8 @@ more_content: | # this will include new lines to allow paragraphs
 footer_show_references: false
 
 # Build settings
-remote_theme: sproogen/resume-theme
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
@@ -61,3 +69,16 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
