@@ -7,15 +7,26 @@
 # > ...something something
 # > profit!
 
+
+# Install XCode command line utils
+if xcode-select -p > /dev/null; then
+    echo "XCode Commandline tools already installed. Skipping."
+else
+    echo "Installing XCode Commandline tools"
+    xcode-select --install
+fi
+
+# Fail on error after this point
 set -e
 
 # Set computer name
-echo "Current computer name [$(uname -n | sed 's/\.local//')]"
+CURRENT_NAME=$(uname -n | sed 's/\.local//')
+echo "Current computer name [$CURRENT_NAME]"
 read -r -p "Pick a computer name: " COMPUTER_NAME
-scutil --set ComputerName "$COMPUTER_NAME"
 
-# Install XCode command line utils
-xcode-select --install
+if [ "$COMPUTER_NAME" -ne "$CURRENT_NAME" ]; then
+  scutil --set ComputerName "$COMPUTER_NAME"
+fi
 
 # Install Hombrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -54,7 +65,7 @@ curl -X POST -H "X-GitHub-OTP: $OTP" https://api.github.com/user/keys -u "$GITHU
 # Clone and prep next step
 mkdir -p ~/github
 cd ~/github
-git clone https://github.com/seekayel/laptop-install.git
+git clone git@github.com:seekayel/laptop-install.git
 
 
 echo "Now just run:
