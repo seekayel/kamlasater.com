@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# Hello! Welcome to my bootstrap script
+#
+# How to use:
+# > bash <(curl -s https://kamlasater.com/bootstrap) | tee "bootstrap-$(date +%Y%m%d-%H%M).log"
+# > ...something something
+# > profit!
+
+
 set -e
 
 xcode-select --install
