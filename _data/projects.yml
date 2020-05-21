@@ -2,7 +2,9 @@
   name: Quantified Software
   link: quantifiedsoftware.com
   description: | # this will include new lines to allow paragraphs
-    Exploring how to measure the software production process. [Youtube](https://www.youtube.com/channel/UCz-mJfAY8vjz9v4D8ePNj-w) [Twitter](https://twitter.com/quantsoftware)
+    Exploring how to measure the software production process.
+    - [Quantified Software on Youtube](https://www.youtube.com/channel/UCz-mJfAY8vjz9v4D8ePNj-w)
+    - [Quantified Software on Twitter](https://twitter.com/quantsoftware)
 
 - layout: top-middle
   name: SeeClickFix

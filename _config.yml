@@ -81,4 +81,6 @@ exclude : [
   "lib/",
   "scripts/",
   "docker-compose.yml",
+  "Makefile",
+  "README.md",
   ]
