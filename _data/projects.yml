@@ -1,4 +1,10 @@
 - layout: top-middle
+  name: Quantified Software
+  link: quantifiedsoftware.com
+  description: | # this will include new lines to allow paragraphs
+    Exploring how to measure the software production process. [Youtube](https://www.youtube.com/channel/UCz-mJfAY8vjz9v4D8ePNj-w) [Twitter](https://twitter.com/quantsoftware)
+
+- layout: top-middle
   name: SeeClickFix
   link: seeclickfix.com
   description: | # this will include new lines to allow paragraphs
