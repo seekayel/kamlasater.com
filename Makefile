@@ -18,6 +18,12 @@ install:
 	@bundle install
 	@pre-commit install
 
+
+# help: update                         - Update necessary dependencies
+.PHONY: update
+update:
+	@bundle update github-pages
+
 # help: clean                          - clean all files using .gitignore rules
 .PHONY: clean
 clean:
