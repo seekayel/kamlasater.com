@@ -1,0 +1,26 @@
+default_language_version:
+    python: python3.8
+fail_fast: false
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+    - id: check-yaml
+    - id: check-json
+    - id: end-of-file-fixer
+    - id: check-added-large-files
+    - id: mixed-line-ending
+    - id: trailing-whitespace
+-   repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: master  # or specific git tag
+    hooks:
+#    - id: markdownlint # Configure in .mdlrc - Check markdown files and flag style issues
+    - id: shellcheck   # Shell scripts conform to shellcheck
+    - id: shfmt        # Check shell style with shfmt
+# -   repo: local
+#     hooks:
+#     - id: bundle-check
+#       name: Bundler Bundle Check
+#       entry: bundle check
+#       language: system
+#       files: '(Gemfile.*|.ruby-version)'
