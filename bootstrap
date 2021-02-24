@@ -7,13 +7,12 @@
 # > ...something something
 # > profit!
 
-
 # Install XCode command line utils
-if xcode-select -p > /dev/null; then
-    echo "XCode Commandline tools already installed. Skipping."
+if xcode-select -p >/dev/null; then
+	echo "XCode Commandline tools already installed. Skipping."
 else
-    echo "Installing XCode Commandline tools"
-    xcode-select --install
+	echo "Installing XCode Commandline tools"
+	xcode-select --install
 fi
 
 # Fail on error after this point
@@ -25,7 +24,7 @@ echo "Current computer name [$CURRENT_NAME]"
 read -r -p "Pick a computer name: " COMPUTER_NAME
 
 if [ "$COMPUTER_NAME" -ne "$CURRENT_NAME" ]; then
-  scutil --set ComputerName "$COMPUTER_NAME"
+	scutil --set ComputerName "$COMPUTER_NAME"
 fi
 
 # Install Hombrew
@@ -36,13 +35,13 @@ brew install git
 EMAIL="ckl@seekayel.com"
 GITHUB_USER="seekayel"
 if [ ! -f ~/.ssh/id_rsa ]; then
-    echo -e "\nLeave SSH key blank, enter desired SSH password.\n"
-    ssh-keygen -q -t rsa -b 4096 -C "GitHub: Kam Lasater <$EMAIL>"
+	echo -e "\nLeave SSH key blank, enter desired SSH password.\n"
+	ssh-keygen -q -t rsa -b 4096 -C "GitHub: Kam Lasater <$EMAIL>"
 fi
 
 eval "$(ssh-agent -s)"
 
-cat >> ~/.ssh/config <<'EOF'
+cat >>~/.ssh/config <<'EOF'
 Host *
  AddKeysToAgent yes
  UseKeychain yes
@@ -59,14 +58,12 @@ echo -e "\nWait for fresh MFA code, enter MFA code & GitHub password before it e
 read -r -p "$GITHUB_USER($EMAIL) mfa: " OTP
 
 curl -X POST -H "X-GitHub-OTP: $OTP" https://api.github.com/user/keys -u "$GITHUB_USER" -d \
-"{\"title\": \"$KEY_NAME\", \"key\": \"$KEY_VALUE\"}"
-
+	"{\"title\": \"$KEY_NAME\", \"key\": \"$KEY_VALUE\"}"
 
 # Clone and prep next step
 mkdir -p ~/github
 cd ~/github
 git clone git@github.com:seekayel/laptop-install.git
-
 
 echo "Now just run:
 
