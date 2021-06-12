@@ -3,7 +3,7 @@ default_language_version:
 fail_fast: false
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.5.0
+    rev: v4.0.1
     hooks:
     - id: check-yaml
     - id: check-json
@@ -12,7 +12,7 @@ repos:
     - id: mixed-line-ending
     - id: trailing-whitespace
 -   repo: https://github.com/jumanjihouse/pre-commit-hooks
-    rev: master  # or specific git tag
+    rev: 2.1.5  # or specific git tag
     hooks:
 #    - id: markdownlint # Configure in .mdlrc - Check markdown files and flag style issues
     - id: shellcheck   # Shell scripts conform to shellcheck
