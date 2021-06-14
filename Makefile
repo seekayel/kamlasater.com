@@ -22,6 +22,7 @@ install:
 # help: update                         - Update necessary dependencies
 .PHONY: update
 update:
+	@pre-commit autoupdate
 	@bundle update github-pages
 
 # help: clean                          - clean all files using .gitignore rules
