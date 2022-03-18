@@ -1,4 +1,15 @@
 - layout: left
+  company: Cyclic.sh
+  link: www.cyclic.sh
+  job_title: CEO and Cofounder
+  dates: January 2021 - present
+  description: |
+    - Full stack javascript apps
+    - From idea to ... (in progress)
+    - Come build with us
+
+
+- layout: left
   company: Black Knight Financial Services
   link: bkfs.com
   job_title: Senior Development Manager
