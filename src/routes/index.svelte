@@ -67,7 +67,7 @@ kamlasater.com</a>
     <div class="wrapper"><div class="container intro-container">
   <h3>About Me</h3>
   <div class="row clearfix"><div class="col-xs-12 col-sm-4 col-md-3 no-print">
-        <span class="profile-img" style="background-image: url(/images/kam-lasater.png)"></span>
+        <!-- <span class="profile-img" style="background-image: url(/static/kam-lasater.png)"></span> -->
       </div><div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
       <p>Motivated to build and grow things.</p>
 
