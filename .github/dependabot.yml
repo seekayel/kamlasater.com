@@ -1,13 +1,11 @@
 version: 2
 updates:
-- package-ecosystem: bundler
+- package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: daily
-    time: "10:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: github-pages
-    versions:
-    - "211"
-    - "213"
+      interval: "daily"
+      time: "05:00"
+      # Use US Eastern Time (UTC -04:00 / -05:00)
+      timezone: "America/New_York"
+  open-pull-requests-limit: 3
+  versioning-strategy: increase-if-necessary
