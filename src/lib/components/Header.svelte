@@ -4,14 +4,14 @@
     <nav>
       <ul>
         <li>
-          <a href="/blog">Blog</a>
+          <a href="/uses">Built With</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="/about">About</a>
         </li>
         <li>
           <a href="/contact">Contact</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
 </header>

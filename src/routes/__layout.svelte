@@ -1,4 +1,7 @@
 <!-- __layout.svelte -->
+<!-- <svelte:head>
+  <link href="themes/prism-vsc-dark-plus.css" rel="stylesheet" />
+</svelte:head> -->
 
 <script>
   import Header from '$lib/components/Header.svelte'
