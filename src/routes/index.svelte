@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Kam Lasater | Software Entrepreneur</title>
-  <meta property="og:title" content="Software Entrepreneur" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="description" content="Personal Site by: Kam Lasater Software Entrepreneur" />
-  <meta property="og:description" content="Personal Site by: Kam Lasater Software Entrepreneur" />
-  <link rel="canonical" href="https://kamlasater.com/" />
-  <meta property="og:url" content="https://kamlasater.com/" />
-  <meta property="og:site_name" content="Software Entrepreneur" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <meta property="twitter:title" content="Software Entrepreneur" />
-  <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","description":"Personal Site by: Kam Lasater Software Entrepreneur","headline":"Software Entrepreneur","name":"Software Entrepreneur","url":"https://kamlasater.com/"}
-  </script>
-  <!-- <link rel="stylesheet" href="/assets/main.css"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-
-  <!-- production analytics for: UA-164058306-1 --><!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164058306-1"></script>
-      <script>
-            window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-164058306-1');
-  </script>
-  <!-- End global site tag (gtag.js) - Google Analytics -->
-</head>
-
-
 <body class=""><div class="container header-contianer">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
@@ -261,5 +225,3 @@ https://seeclickfix.com</a><p><b>Cofounder</b></p><p>January 2008 - October 2019
 </div>
 <script src="/assets/js/index.js"></script>
 </body>
-
-</html>
