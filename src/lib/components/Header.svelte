@@ -19,7 +19,8 @@
 <style>
     header {
         padding: 1rem;
-        background: lightskyblue;
+        background: darkblue;
+        color: white;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
