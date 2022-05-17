@@ -1,11 +1,11 @@
 {
 	"name": "kamlasater.com",
 	"version": "0.0.1",
-  "main": "dist/index.js",
+	"main": "dist/index.js",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-    "start": "node dist/index.js",
+		"start": "node dist/index.js",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
