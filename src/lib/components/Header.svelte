@@ -4,6 +4,20 @@
     <nav>
       <ul>
         <li>
+          <a target="_blank" href="https://github.com/seekayel">
+            <i class="fa-brands fa-github" title="Github link"></i>
+          </a>
+        </li><li>
+          <a target="_blank" href="https://www.linkedin.com/in/kamlasater">
+            <i class="fa-brands fa-linkedin" title="Linkedin link"></i>
+          </a>
+        </li><li>
+          <a target="_blank" href="https://twitter.com/seekayel">
+            <i class="fa-brands fa-twitter" title="Twitter link"></i>
+          </a>
+        <!-- </li><li>
+          <a href="mailto:ckl@seekayel.com" target="_blank">ckl@seekayel.com</a> -->
+        </li><li>
           <a href="/uses">Built With</a>
         </li>
         <!-- <li>

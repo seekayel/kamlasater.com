@@ -4,27 +4,6 @@
       <h1>Kam Lasater</h1>
       <h2>Software Entrepreneur</h2>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
-      <ul class="icons no-print"><li>
-            <a target="_blank" href="https://github.com/seekayel" class="button button--sacnite button--round-l">
-              <i class="fab fa-github" title="Github link"></i>
-            </a>
-          </li><li>
-            <a target="_blank" href="https://www.linkedin.com/in/kamlasater" class="button button--sacnite button--round-l">
-              <i class="fab fa-linkedin" title="Linkedin link"></i>
-            </a>
-          </li><li>
-            <a target="_blank" href="https://twitter.com/seekayel" class="button button--sacnite button--round-l">
-              <i class="fab fa-twitter" title="Twitter link"></i>
-            </a>
-          </li>
-      </ul><p>
-          Email: <a href="mailto:ckl@seekayel.com" target="_blank">ckl@seekayel.com</a>
-        </p><p>
-          Web:
-<a href="//kamlasater.com" target="_blank" class="">
-kamlasater.com</a>
-        </p></div>
   </div>
 </div>
 <main class="page-content" aria-label="Content">
