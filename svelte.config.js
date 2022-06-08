@@ -8,6 +8,9 @@ const config = {
 	kit: {
 		adapter: adapter({ out: 'dist' })
 	},
+  files: {
+    assets: 'static'
+  },
   preprocess: [
     mdsvex({
       extensions: ['.md']
