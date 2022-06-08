@@ -1,6 +1,6 @@
-<body class=""><div class="container header-contianer">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
+<body><div>
+  <div>
+    <div>
       <h1>Kam Lasater</h1>
       <h2>Software Entrepreneur</h2>
     </div>
