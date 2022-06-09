@@ -15,11 +15,13 @@
           <a target="_blank" href="https://twitter.com/seekayel">
             <i class="fa-brands fa-twitter" title="Twitter link"></i>
           </a>
-        <!-- </li><li>
-          <a href="mailto:ckl@seekayel.com" target="_blank">ckl@seekayel.com</a> -->
-        </li><li>
-          <a href="/uses">Built With</a>
         </li>
+        <!-- <li>
+          <a href="mailto:ckl@seekayel.com" target="_blank">ckl@seekayel.com</a>
+        </li>
+        <li>
+          <a href="/uses">Built With</a>
+        </li> -->
         <!-- <li>
           <a href="/about">About</a>
         </li>
