@@ -14,7 +14,7 @@ app.use(express.static(
 	{
 		setHeaders: (res, pathname, stats) => {
 			if (pathname.match(/\.ico$/))
-				res.setHeader('content-type', 'image/x-icon');
+				res.setHeader('Content-Type', 'image/x-icon');
 		}
 	}
 ));
