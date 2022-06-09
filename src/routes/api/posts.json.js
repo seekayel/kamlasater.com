@@ -5,10 +5,10 @@ export const get = async () => {
   const iterPostFiles = Object.entries(allPostFiles)
 
   const allPosts = await Promise.all(
-    iterPostFiles.map(async ([path, resolver]) => {
+    iterPostFiles.map(async ([rawPath, resolver]) => {
       const {metadata} = await resolver()
-      const post = path.slice(2, -3)
-      return {metadata, post}
+      const path = rawPath.slice(2, -3)
+      return {meta: metadata, path}
     })
   )
 
