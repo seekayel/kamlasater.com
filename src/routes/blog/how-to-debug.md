@@ -2,12 +2,13 @@
 title: How to Debug
 date: "2022-06-08"
 ---
-
 We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.
 
 How do I debug a bug that is intermittent? How do I debug something that works sometimes?
 
 Here are some reminders to myself next time I encounter a baffling debugging session.
+
+## Contents
 
 ## Choose Learning
 
