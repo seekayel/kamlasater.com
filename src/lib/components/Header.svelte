@@ -41,7 +41,8 @@
 <style>
   header {
       padding: 1rem;
-      background: darkblue;
+      /* background: darkblue; */
+      background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
       color: white;
   }
 
