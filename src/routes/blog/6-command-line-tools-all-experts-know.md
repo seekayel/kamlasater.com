@@ -17,13 +17,6 @@ Pipe is awesome. It lets me connect the output of one command and "pipe" it into
 
 There are two outputs from each command, standard out (stdout) and standard error (stderr). Pipe by default connects to stdout.
 
-## `xargs`
-
-This is technically a command. It is a command that executes commands.
-It executes a command for every line of input it receives. The arguments you pass to xargs form the basis of the command to execute.
-Hint: use `-J{}` to substitute `{}` (or some other character string) in the middle of the command to execute or multiple times for that matter.
-Example: `pbpaste | xargs -J{} aws s3 cp {} -`
-
 ## `-` (aka dash)
 
 Some commands take a file name as an argument. In cases where I want to use stdin or stdout. Dash is the answer.
@@ -36,6 +29,13 @@ These are technically commands as well. They interact with the paste buffer.
 On mac you can access your paste buffer using the paste-buffer-paste (pbpaste) and paste-buffer-copy (pbcopy) commands. I love how they keep my console clean especially when I have trying to transform a large chunk of text/json
 Example:
 `aws s3 cp s3://some-bucket-name/awesome-file.json - | pbcopy`
+
+## `xargs`
+
+This is technically a command. It is a command that executes commands.
+It executes a command for every line of input it receives. The arguments you pass to xargs form the basis of the command to execute.
+Hint: use `-J{}` to substitute `{}` (or some other character string) in the middle of the command to execute or multiple times for that matter.
+Example: `pbpaste | xargs -J{} aws s3 cp {} -`
 
 ## `2>` and `2>&1`
 
