@@ -1,4 +1,4 @@
-<header>
+<header class="rainbow">
   <nav class="menu">
     <ul class="menu-left">
       <li>
@@ -39,12 +39,45 @@
 </header>
 
 <style>
+
+  @keyframes changeBg {
+    0%,100%  {
+      background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
+    }
+    50% {
+      background-image: linear-gradient(to bottom right, darkblue, darkblue);
+    }
+  }
+
   header {
       padding: 1rem;
-      /* background: darkblue; */
-      background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
       color: white;
+      /* animation: changeBg 5s infinite;
+      animation-timing-function: ease-in-out; */
   }
+
+
+  @keyframes rainbow {
+  0% {
+    background-position: 1000% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.rainbow {
+  background: linear-gradient( 60deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400);
+  background-size: 1000% 1000%;
+  animation-name: rainbow;
+  animation-duration: 180s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+
+
 
   nav.menu{
     display: flex;
