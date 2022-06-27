@@ -18,6 +18,14 @@ Some commands end with trailing newlines some do not. Also, if you use copy-past
 
 ## 2. `grep`
 
+Grep stands for Global Regular Expression Print. That is what it does. Search the input for some regex on each line.
+
+### Protips
+
+- `-E` flag for extended, aka more modern, RegEx syntax
+- `-n` Print line number
+- `-i` Case insensitive matching
+- `-v` Invert the selection
 
 ## 3. `wc`
 
@@ -34,15 +42,25 @@ Universal swiss army knife for json. Love it.
 
 ## 5. `git`
 
+Distributed version control ftw. I probably only use 4-5 git commands regularly (`init`, `status`, `commit`, `push`, `checkout -b`)
+
 ## 6. `pushd`, `popd` and `dirs`
 
+When navigating directory structures `pushd` lets you keep your current working directory on a stack. When you are done with the directory you `pushd`'ed into you can `popd` to jump back. This can be handy with `!pu` and `popd` in bash to bounce between two directories. `dirs` lets you see the stack of directories that you can pop. 
+
 ## 7. `zip` and `unzip`
+
+Standard zip utils.
+
+### Protips
+
+Try `zip -r output.zip ./some/folder/` to recursively include subfiles. The first few times you use zip it is helpful to use `unzip -l` to see what is inside.
 
 ## 8. `base64`
 
 Encode and decode strings as base64.
 
-### Examples:
+### Examples
 
 (note the `-n` drops the trailing newline from echo)
 
@@ -53,12 +71,31 @@ $ echo -n 'hello world :)' | base64 | base64 -D
 hello world :)$
 ```
 
-## 9. `shasum`
+## 9. `man`
 
-Run hash algorithmns from the commandline.
+Read the manual for a command. Especially when you use `/` then type a search term. Use `n` to cycle to next found item.
+
+### Examples
+
+- `man shasum`
+- `man base64`
 
 ## 10. `env`
 
+Print all your environment variables. It is also great for hash bang instructions for shell scripts.
+
+### Examples
+
+- Print sorted variables from nodejs: `env | grep -i 'node' | sort`
+- Start a bash shell script: `#!/usr/bin/env bash`
+
 ## 11. `curl`
 
-## 12. BONUS: `aws`
+Make requests. Although several protocols are supported I usually only use http(s).
+
+### Examples
+
+- See the response headers along with the response: `curl -i https://discord.cyclic.sh`
+- Set request headers: `curl -i https://api.example.com -H 'Accept: application/json'`
+- Set Basic Auth user/password: `curl -i https://discord.cyclic.sh -H 'Accept: application/json' -u MyUser:Pa$$w0rd`
+- Send data: `curl -i https://discord.cyclic.sh -H 'Accept: application/json' -u MyUser:Pa$$w0rd -XPOST --data '{"key":"value"}'`
