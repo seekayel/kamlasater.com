@@ -1,6 +1,6 @@
 # kamlasater.com
 
-Personal resume site and random playground.
+Personal resume site, blog and random playground.
 
 Inspired by: https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 
