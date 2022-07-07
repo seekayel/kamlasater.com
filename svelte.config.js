@@ -21,7 +21,7 @@ const config = {
       },
       remarkPlugins: [
         [remarkToc, {
-          heading: 'contents|toc|table[ -]of[ -]contents?',
+          heading: '.* contents|contents|toc|table[ -]of[ -]contents?',
           ordered: true
         }]
       ]
