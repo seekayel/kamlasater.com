@@ -16,8 +16,6 @@ Note:
 - Names have been changed to protect the innocent and not so innocent.
 - Only egos (and wallets) were harmed by the failures recounted here.
 
-## Contents
-
 ## Serverless is Stateless
 
 All the architecture posts talk about Stateless computing and serverless. How serverless is so scalable because it spins up new instances to satisfy increased load. This all made sense. Lambda was like a big thread pool in the sky. I could set some parameters to manage the maximum and minimum number of threads and AWS would handle all the hard work of hosting, spinning up, spinning down and networking the instances together. Awesome-sauce.
@@ -30,14 +28,14 @@ Background job that receives batches (10's-100's) of PDFs from the client, split
 
 Lambda logic:
 
-1) Invoke with S3 path to file
-1) Read 10+mb files from S3 to /tmp
-1) Process file
-1) Write results to S3
-1) Respond with S3 path to transformed file
-1) Serverless FTW!
+- Invoke with S3 path to file
+- Read 10+mb files from S3 to /tmp
+- Process file
+- Write results to S3
+- Respond with S3 path to transformed file
+- Serverless FTW!
 
-Everything works great until... inconsistent out of disk space errors, or no space left on device.
+Everything works great until... inconsistent out of disk space errors, or no space left on device (depending on your OS/language stack).
 
 ## How to Fail
 
@@ -51,3 +49,6 @@ Well Lambda instance have a writable `/tmp` folder where you can store temporary
 
 Some quick googling gets you a solution of clearing `/tmp` at the start and/or end of each invocation [#stackoverflow-ftw](https://stackoverflow.com/questions/44108712/aws-lambda-release-tmp-storage-after-each-execution). Till that fix makes it to production you can just re-execute any failed step function runs.
 
+Until... now out of memory errors? WTF!
+
+### Problem v2
