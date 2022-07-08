@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-node';
 import sveltePreprocess from 'svelte-preprocess'
 import { mdsvex } from 'mdsvex'
+import { searchForWorkspaceRoot } from 'vite'
 
 import remarkToc from 'remark-toc'
 
@@ -8,7 +9,16 @@ import remarkToc from 'remark-toc'
 const config = {
   extensions: ['.svelte', '.md'],
 	kit: {
-		adapter: adapter({ out: 'dist' })
+		adapter: adapter({ out: 'dist' }),
+    vite: {
+      server: {
+        fs: {
+          allow: [
+            searchForWorkspaceRoot(process.cwd())
+          ]
+        }
+      }
+    }
 	},
   files: {
     assets: 'static'
@@ -21,7 +31,7 @@ const config = {
       },
       remarkPlugins: [
         [remarkToc, {
-          heading: 'contents|toc|table[ -]of[ -]contents?',
+          heading: '.* contents|contents|toc|table[ -]of[ -]contents?',
           ordered: true
         }]
       ]
