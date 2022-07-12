@@ -1,5 +1,5 @@
 ---
-title: 'How I Passed 9 AWS Certifications in 14 Months'
+title: 'How to Pass 9 AWS Certifications in 14 Months'
 date: "2022-07-15"
 tags:
   - AWS
@@ -10,17 +10,23 @@ tags:
 
 Here is how I passed 9 AWS certification tests in 14 months. Oddly the practice testing is not the most critical step. All of these steps are needed. Let me know if you try them out and how they work for you.
 
-## tldr: Process
+# tldr: Process
 
-  1) Be clear on **WHY** you are taking the exam(s)
-  2) Set a goal of **WHICH** exam(s)
-  3) Set a goal of **WHEN**
-  4) **Register** for the exam
-  5) **Tell** everyone about the exam
-  6) Take **PRACTICE** tests
-  7) **Pass** the exam! 🎉
+1) Be clear on **WHY** you are taking the exam(s)
 
-## Why
+2) Set a goal of **WHICH** exam(s)
+
+3) Set a goal of **WHEN**
+
+4) **Register** for the exam
+
+5) **Tell** everyone about the exam
+
+6) Take **PRACTICE** tests
+
+7) **Pass** the exam! 🎉
+
+# Why
 
 A **WHY** is important to keep focused and make sure you optimize for the outcome you are looking to achieve.
 
@@ -34,11 +40,11 @@ My **WHY** was:
 - Inspire my team to learn AWS better
 - Test some techniques of Ultra Learning
 
-## Which Exam
+# Which
 
 AWS is constantly changing the line up of their certifications. Depending on the current offering and your skills you may want to pick a different starting point.
 
-My **WHICH** was in this order:
+I only picked the next test or two at a time. This was my order:
 
 - Developer - Associate
 - SysOps - Associate
@@ -50,25 +56,25 @@ My **WHICH** was in this order:
 - DevOps Engineer - Professional
 - Solutions Architect - Professional
 
-## When
+# When
 
 Pick a date that gives you a realistic chance to do it, but not so far out that it has no sense of urgency.
 
-For me the **WHEN** was usually 4-8 weeks out from when I was scheduling. At the time I had to take the tests in person which meant getting a time slot that was convenient for my schedule also took about that amount of time.
+For me the **WHEN** was usually 4-8 weeks out from when I was scheduling. At the time I had to take the tests in person which meant getting a time slot that was convenient for my schedule. It took about that amount of time for the center to have a slot I wanted.
 
-## Register
+# Register
 
 Picking a date is only real if you then register.
 
 For me my employer paid for any certification tests I took. Also, after I passed the first one AWS issued discounts on future exams.
 
-## Tell
+# Tell
 
 This is probably the most important step. Tell everyone. Tell anyone. This is the equivalent of tying your self to the mast.
 
 For me the **TELL** was scheduling it on the office calendar and announcing each exam to my colleagues. In my personal life it meant  scheduling with my wife to coordinate childcare and usually having a play date. This meant I had multiple sets of people who were going to ask me the outcome of the test. Don't underestimate the power of feeling embarassment in going back on your assertions with your family, friends or colleagues.
 
-## Practice
+# Practice
 
 You now have no choice but to pass. Better get to it :) 
 
@@ -91,7 +97,7 @@ The first exam usually would take 4-6 hours of work till the process was complet
 
 This whole practice process usually took me about 2 weeks.
 
-## Pass
+# Pass
 
 This was my process for taking the test:
 
