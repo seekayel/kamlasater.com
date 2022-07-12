@@ -4,6 +4,7 @@ date: "2022-07-15"
 tags:
   - AWS
   - tech
+description: Here is how to pass 9 AWS certification tests in 14 months.
 ---
 
 ![A List of My Certifications](/static/img/certification-list.png)
