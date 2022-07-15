@@ -33,7 +33,7 @@ A **WHY** is important to keep focused and make sure you optimize for the outcom
 
 I would not recomend this challenge for someone who thinks they will get a job out of it, or a promotion. I did find it useful to understand a broader array of the AWS service offerings and it forced me to nail the basics.
 
-At a past job, as a way to challenge myself and my team to dive into studying AWS I took on the challenge of passing all the AWS certification exams within 12 months. I used some elements of Ultra Learning which I was reading at the time.
+At a past job, as a way to challenge myself and my team to dive into studying AWS I took on the challenge of passing all the AWS certification exams within 12 months. I used some elements of [Ultralearning](https://www.scotthyoung.com/blog/ultralearning/) (a strategy for aggressive, self-directed learning) which I was reading at the time.
 
 My **WHY** was:
 
@@ -56,6 +56,8 @@ I only picked the next test or two at a time. This was my order:
 - Advanced Networking - Specialty
 - DevOps Engineer - Professional
 - Solutions Architect - Professional
+
+In general I would recommend completing all the Associate level before moving onto the Specialty. With one exception, I found the Networking Specialty exam the hardest of any of the exams. I managed to pass the first time I took it but only barely. Unless you come from a Networking background (I installed networks as a summer job in high school and admin'ed a call center and corporate lan/wan first job out of college) jump first to the Professional certifications then circle back to complete the Advanced Networking.
 
 # When
 
