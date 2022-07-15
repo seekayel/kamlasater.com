@@ -18,13 +18,15 @@ Looking at the GH timeline also was a good reality check against the career stor
 
 "Oh I've really been getting into python and machine learning" (checks github) no python repos, 3 commits in last 3 months. hmmm..
 
+vs
+
 "I've been experimenting with a few front end frameworks hosted on different platforms to try to learn common coding and hosting patterns."
 (checks github)
 Four differnt front end framework repos, each a similar app, all hosted on free services. 3-5 commits a week for past few months.
 
 Notice how the second trajectory syncs to the history, whereas the first one doesn't. Given two candiates that seemed equally as strong I would lean towards the one that had a more consistent history. 3-5 dots / week for 6 months was better than a wall of comimts over the last 6 weeks.
 
-tldr: As your math teacher said, show your work.
+**tldr:** As your math teacher said, show your work.
 
 ## Understanding the Why
 
@@ -32,21 +34,19 @@ As a manager I wanted to explain our goals as a company. Then explain our goals 
 
 During the interview process I wanted to see if the candidate was connected to the why of what they were doing and could explain how thier actions flowed from their own thinking connected to that why.
 
-Often times school projects have a constraint imposed to drive practice with a particular concept. This creates some areas of subtley in describing the why for those projects.
-
+Often times school projects have a constraint imposed to drive practice with a particular concept. This creates some areas of subtley in describing the why for those projects. Here is an example:
 
 Q: Why did you use Jupyter Notebooks and Pandas?
 
-Example:
 A: I don't know. Its what we used for that class. The lab was to run word frequency analysis on books.
 
 vs
 
 A: The goal was to practice the NLP we were learning in class. I had been reading alot of Sci-Fi so thought it would be fun to do pro-noun usage comparisons between male and female authors. I couldn't find the data easily, but I found all the books for one author, so I compared the first half their career to second half.
 
+Even if 
 
-
-tldr: explain the goal not just the steps/techniques to achieve it
+**tldr:** explain the goal not just the steps/techniques to achieve it.
 
 ## Story Telling
 
@@ -72,7 +72,7 @@ I was looking to the candidate to be able to describe:
 - how they fixed the issue
 - the technical specifics of what they learned
 
-tldr: writing software is solving problems you haven't solved, tell me a story of your hero's journey.
+**tldr:** writing software is solving problems you haven't solved, tell me a story of your hero's journey.
 
 ## Demonstration of Team Ability / Cooperation
 
@@ -84,5 +84,12 @@ Examples of failures:
 - a pattern of interrupting me or talking over me during the interview
 - using I to describe all the work done on a team project but then not being able to explain the details and only when pressed admitting that a team mate completed that part of the project
 
-tldr: software is a team sport, show you can work well on a team
+**tldr:** software is a team sport, show you can work well on a team
 
+## Summary
+
+None of this will get you a job for sure. Hopefully this will help you improve your chances of getting hired. If you are just starting out on a career change or planning for a professional coding job, you can do it.
+
+- Consistency beats intensity
+- Be able to explain your thinking
+- Software is a team sport
