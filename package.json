@@ -4,6 +4,7 @@
 	"main": "server.js",
 	"scripts": {
 		"dev": "svelte-kit dev",
+    "dev:rollup": "rollup -c -w",
 		"build": "svelte-kit build",
 		"start": "node server.js",
 		"package": "svelte-kit package",
@@ -17,6 +18,7 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.21.0",
+		"@rollup/plugin-node-resolve": "^13.3.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"eslint": "^8.12.0",
@@ -25,6 +27,8 @@
 		"mdsvex": "^0.10.5",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
+		"rollup": "^2.77.0",
+		"rollup-plugin-svelte": "^7.1.0",
 		"sass": "^1.51.0",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.2.6",
