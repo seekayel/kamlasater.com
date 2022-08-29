@@ -3,7 +3,7 @@ title: 6 Books that Shaped My Engineering Career
 date: "2030-01-01"
 tags:
   - tech
-  - cli
+  - books
 ---
 
 
