@@ -1,5 +1,5 @@
 ---
-title: Tis The Set of The Sail
+title: One Ship Sails East
 date: "2022-09-27"
 tags:
   - poetry
@@ -7,11 +7,11 @@ tags:
 
 <img
   alt="Sailing ships sailing east and west in rough seas"
-  src="/static/posts/one-sails-east-the-other-west.png"
+  src="/posts/one-sails-east-the-other-west.png"
   height="300px"
 >
 
-# Tis The Set Of The Sail
+# Tis The Set Of The Sail or One Ship Sails East
 
 by [Ella Wheeler Wilcox](https://en.wikipedia.org/wiki/Ella_Wheeler_Wilcox)
 
