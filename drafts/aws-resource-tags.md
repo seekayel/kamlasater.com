@@ -20,3 +20,17 @@ These tags get created through:
 - API/CLI
 - CloudFormation
 
+The problem is that none of these methods is consistent.
+
+
+CFN states that it automatically applies three standard 
+tags derived from the stack all all created resources. 
+- aws:cloudformation:stack-name
+- aws:cloudformation:stack-id
+- aws:cloudformation:logical-id
+
+However it only has a 50% hit rate in the serverless resources tested.
+
+The docs also state that it will cascade down any tags applied to the stack to any generated resources. Again only 50% hit rate.
+
+Inside of cfn syntax each resource seems to have a different syntax. CFN validate doesn't catch these problems.
