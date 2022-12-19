@@ -1,6 +1,6 @@
 # kamlasater.com
 
-Personal resume site, blog and random playground.
+Personal resume site, blog and random playground hosted at: https://kamlasater.com (https://rich-gray-seal-fez.cyclic.app)
 
 Inspired by: https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 
