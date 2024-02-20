@@ -6,6 +6,12 @@ tags:
   - startups
 ---
 
+<img
+  alt="Slack Search Results"
+  src="/posts/slack-search-redacted.jpg"
+  width="550px"
+>
+
 # Using Slack as an Searchable Event Stream Database
 
 When building a startup I rarely have the time to build software in the way I think of as correct. In these situations I find particular pleasure when simple solutions can be “good enough”. Best yet is when one of these solutions holds up to increasing numbers of users, employees and use cases. One pattern that manages all of these is using Slack as a searchable event stream DB.
@@ -40,5 +46,8 @@ If possible I would recommend adding any secondary identifiers or additional lin
 ## Usage
 In the early phase of building a product I leave notifications on for these channels as almost nothing is happening. When something does happen (demo request, user signup, customer purchase or event item added to cart) the team and I can get notified immediately. At this stage it is possible for reactions to be used to indicate if one team member has taken action. A great slack search is  `-hasmy::white_check_mark after:2024-02-01 in:#prod-user-events "review"`. This lets you search for messages in a channel with certain words that you haven’t processed yet. This is helpful for driving simple workflows or making sure items get processed while giving visibility to the team.
 
-Let me know if you have tried this and how it has worked out for you on your teams.
+## Examples
+- Search by a customer’s email to see when they first signed up with links to their mixpanel customer, customer.io profile, when they purchased and links to their stripe customer record, stripe subscription record and internal product page.
+- Have a channel of items to review (perhaps some type of spam or abuse), the messages can contain links to the content, user, and take action. After taking action react with same emoji. This is a handy way to be able to operate easily from mobile.
 
+Let me know if you have tried this and how it has worked out for you on your teams.
