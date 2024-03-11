@@ -30,7 +30,7 @@
       <ul>
         <li>Full stack javascript/python apps</li>
         <li>From idea to 150k+ developers</li>
-        <li>Fully AWS hosted PaaS built by team of 2</li>
+        <li>Hosted PaaS built by team of 2</li>
       </ul>
     </div>
     <br>
@@ -64,146 +64,111 @@
     </div>
     <br>
 
-
-
-
-
-
-      <div class="row clearfix layout layout-left">
-    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details"><h4>LegalScience</h4>
-  <a href="https://legalscience.com" target="_blank" class="link">
-  https://legalscience.com</a><p><b>Chief Executive Officier</b></p><p>April 2017 - December 2018</p></div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12"><ul>
-    <li>Closed first commercial data deal</li>
-    <li>Awarded 2+ million dollar SBIR grant</li>
-    <li>Implemented sales and marketing tracking tools</li>
-    <li>Implemented modern CICD practices</li>
-  </ul>
-
+    <div>
+      <h3>LegalScience (<a href="//legalscience.com" target="_blank" class="link">legalscience.com</a>)</h3>
+      <p><b>Chief Executive Officer</b></p>
+      <p>April 2017 - December 2017</p>
+      <ul>
+        <li>Closed first commercial data deal</li>
+        <li>Awarded 2+ million dollar SBIR grant</li>
+        <li>Implemented sales and marketing tracking tools</li>
+        <li>Implemented modern CICD practices</li>
+      </ul>
     </div>
+    <br>
+
+
+    <div>
+      <h3>New Haven Bank (<a href="//newhavenbank.com" target="_blank" class="link">newhavenbank.com</a>)</h3>
+      <p><b>Board Member</b></p>
+      <p>October 2012 - April 2015</p>
+      <ul>
+        <li>Board member of FDIC insured community bank</li>
+        <li>Member of Audit commitee</li>
+        <li>Member of Compensation commitee</li>
+      </ul>
+    </div>
+    <br>
+
+
+    <div>
+      <h3>SeeClickFix (<a href="//seeclickfix.com" target="_blank" class="link">seeclickfix.com</a>)</h3>
+      <p><b>Cofounder</b></p>
+      <p>January 2008 - October 2019</p>
+      <ul>
+        <li>From idea to successful cash exit</li>
+        <li>Raised seed and two institutional rounds</li>
+        <li>Developed SaaS business model</li>
+      </ul>
+    </div>
+    <br>
+
+
+    <div>
+      <h3>HigherOne (<a href="//higherone.com" target="_blank" class="link">higherone.com</a>)</h3>
+      <p><b>Software Engineer and Software Architect</b></p>
+      <p>June 2003 - April 2010</p>
+      <ul>
+        <li>Early engineer to IPO</li>
+        <li>Helped grow company from 20 to 400 employees</li>
+        <li>Helped grow fintech product from $1M ARR to $100M ARR</li>
+        <li>Technical lead on two acquisitions</li>
+      </ul>
+    </div>
+    <br>
   </div>
-
-
-      <div class="row clearfix layout layout-left">
-    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details"><h4>SeeClickFix</h4>
-  <a href="https://seeclickfix.com" target="_blank" class="link">
-  https://seeclickfix.com</a><p><b>Cofounder</b></p><p>January 2008 - October 2019</p></div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12"><ul>
-    <li>From idea to successful cash exit</li>
-    <li>Raised seed and two institutional rounds</li>
-    <li>Developed SaaS business model</li>
-  </ul>
-
-    </div>
-  </div>
-
-
-  </div>
-
-
-
-
-  <div class="container projects-container">
-    <h2>Projects</h2>
-
-    <div class="row clearfix layout layout-top-middle">
-      <div class="col-xs-12 col-print-12 details"><h4>Quantified Software</h4>
-    <a href="//quantifiedsoftware.com" target="_blank" class="link">
-    quantifiedsoftware.com</a></div>
-      <div class="col-xs-12 col-print-12"><p>Exploring how to measure the software production process.</p>
-    <ul>
-      <li><a href="https://www.youtube.com/channel/UCz-mJfAY8vjz9v4D8ePNj-w">Quantified Software on Youtube</a></li>
-      <li><a href="https://twitter.com/quantsoftware">Quantified Software on Twitter</a></li>
-    </ul>
-
-      </div>
-    </div>
-
-
-        <div class="row clearfix layout layout-top-middle">
-      <div class="col-xs-12 col-print-12 details"><h4>SeeClickFix</h4>
-    <a href="//seeclickfix.com" target="_blank" class="link">
-    seeclickfix.com</a></div>
-      <div class="col-xs-12 col-print-12"><p>Cofounder of community driven government engagement and 311 platform. Venture backed and acquired in 2019.</p>
-
-      </div>
-    </div>
-
-
-        <div class="row clearfix layout layout-top-middle">
-      <div class="col-xs-12 col-print-12 details"><h4>MakeHaven</h4>
-    <a href="https://www.makehaven.org/" target="_blank" class="link">
-    https://www.makehaven.org/</a></div>
-      <div class="col-xs-12 col-print-12"><p>Cofounder of non-profit makerspace.</p>
-
-      </div>
-    </div>
-
-
-        <div class="row clearfix layout layout-top-middle">
-      <div class="col-xs-12 col-print-12 details"><h4>New Haven Bank (nee Start Bank)</h4>
-    <a href="https://www.newhavenbank.com/" target="_blank" class="link">
-    https://www.newhavenbank.com/</a></div>
-      <div class="col-xs-12 col-print-12"><p>Board member of CDFI bank. Member of audit commitee.</p>
-
-      </div>
-    </div>
-
-
-        <div class="row clearfix layout layout-top-middle">
-      <div class="col-xs-12 col-print-12 details"><h4>Piro Farm</h4>
-    <a href="https://pirofarm-blog.tumblr.com/" target="_blank" class="link">
-    https://pirofarm-blog.tumblr.com/</a></div>
-      <div class="col-xs-12 col-print-12"><p>Experiments in gardening and maker on activities.</p>
-
-      </div>
-    </div>
-
-
-  </div>
-
 
 
 
   <div class="container education-container">
     <h2>Education</h2>
-
-      <div class="row clearfix layout layout-left">
-    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details"><h4>Carnegie Mellon University</h4><p><b>BS Electrical and Computer Engineering</b></p><p>1999 - 2003</p></div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12"><p>I focused on the interface between hardware and software.</p>
+    <br>
+    <h3>Carnegie Mellon University</h3>
+    <p><b>BS Electrical and Computer Engineering</b></p>
+    <p>1999 - 2003</p>
   <ul>
+    <li>I focused on the interface between hardware and software.</li>
     <li>Course work: Operating Systems, Embedded Systems, Advanced Digital Design and Advanced Prototyping Lab</li>
     <li>Teaching Assistant: Embedded Systems and Advanced Digital Design</li>
     <li>Languages: C, Verilog, Java</li>
     <li>Tools: XEmacs, Make, CVS</li>
   </ul>
-
-    </div>
   </div>
 
 
-  </div>
-  <div class="container more-container">
-    <h2>Certifications</h2>
-    <div class="row clearfix">
-      <div class="col-md-12">
-        <p>Amazon Web Services</p>
+<br>
+
+<div>
+  <h2>Talks</h2>
+  <br>
+
   <ul>
-    <li><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=4&amp;t=c&amp;d=2019-12-20&amp;ci=AWS00532053">AWS Solutions Architect Professional</a></li>
-    <li>AWS Devops Professional</li>
-    <li>AWS Networking Specialist</li>
-    <li>AWS Security Specialist</li>
-    <li>AWS Big Data Specialist</li>
-    <li>AWS Machine Learning Specialist</li>
-    <li>AWS Solutions Architect Associate</li>
-    <li>AWS Sysops Associate</li>
-    <li>AWS Developer Associate</li>
+    <li>Serverless Days NYC June 2022 (<a href="//www.youtube.com/watch?v=MFDy6AkMHEo">youtube.com/watch?v=MFDy6AkMHEo</a>)</li>
+    <li>Devops Days Boston September 2022 (<a href="//www.youtube.com/watch?v=253eJpL4cpw">youtube.com/watch?v=253eJpL4cpw</a>)</li>
   </ul>
+<br>
+</div>
 
-      </div>
-    </div>
+  <div>
+    <h2>Certifications - Active</h2>
+    <br>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b64098ff-1aeb-4953-a71e-07fded203deb" data-share-badge-host="https://www.credly.com"></div>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="19647a32-6e16-4821-aaf3-0b9e3251c4f2" data-share-badge-host="https://www.credly.com"></div>
+    <br>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0ca5c340-103c-4670-ae7e-22d294717b20" data-share-badge-host="https://www.credly.com"></div>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8473411d-6abf-4a08-a8db-3b4ef8f3fc27" data-share-badge-host="https://www.credly.com"></div>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="94cdb014-270e-4943-970a-63c0b49da021" data-share-badge-host="https://www.credly.com"></div>
+
+    <h2>Certifications - Previous</h2>
+    <br>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6660ad38-47d8-49a3-bbaf-aa3ce462d6ee" data-share-badge-host="https://www.credly.com"></div>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="21b185d5-6032-4d99-8cb6-e0c59b46f7b6" data-share-badge-host="https://www.credly.com"></div>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b8fde6f7-87d6-4a54-a760-a3a6c572acbb" data-share-badge-host="https://www.credly.com"></div>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a83f5537-9cf8-4805-86c0-9fb43ef60a1b" data-share-badge-host="https://www.credly.com"></div>
+
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   </div>
-  </div>
+
   </main>
 
   <div class="container footer-container">
