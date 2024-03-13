@@ -40,8 +40,7 @@
       <p><b>Senior Development Manager</b></p>
       <p>June 2018 - April 2020</p>
       <ul>
-        <li>Exceeded organization sales targets for 2.5 yrs</li>
-        <li>Serverless AI product launched with 3 of top 5 US banks</li>
+        <li>Serverless AI product launched with 3 of top 10 US banks</li>
         <li>Migrated to serverless build system</li>
         <li>9 AWS Certifications in 14 months</li>
         <li>Completed PCI SAQ-d process with assessor</li>
@@ -54,7 +53,7 @@
     <div>
       <h3>HeavyWater (<a href="//heavywater.com" target="_blank" class="link">heavywater.com</a>)</h3>
       <p><b>Chief Technology Officer</b></p>
-      <p>January 2018 - June 2018</p>
+      <p>January 2018 - June 2018 (acquired)</p>
       <ul>
         <li>Grew dev team from 3 to 6</li>
         <li>Launched product</li>
@@ -94,7 +93,7 @@
     <div>
       <h3>SeeClickFix (<a href="//seeclickfix.com" target="_blank" class="link">seeclickfix.com</a>)</h3>
       <p><b>Cofounder</b></p>
-      <p>January 2008 - October 2019</p>
+      <p>January 2008 - October 2019 (acquired)</p>
       <ul>
         <li>From idea to successful cash exit</li>
         <li>Raised seed and two institutional rounds</li>
@@ -107,7 +106,7 @@
     <div>
       <h3>HigherOne (<a href="//higherone.com" target="_blank" class="link">higherone.com</a>)</h3>
       <p><b>Software Engineer and Software Architect</b></p>
-      <p>June 2003 - April 2010</p>
+      <p>June 2003 - April 2010 (IPO)</p>
       <ul>
         <li>Early engineer to IPO</li>
         <li>Helped grow company from 20 to 400 employees</li>
