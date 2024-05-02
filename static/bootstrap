@@ -34,9 +34,9 @@ brew install git
 # Install ssh keys for github
 EMAIL="ckl@seekayel.com"
 GITHUB_USER="seekayel"
-if [ ! -f ~/.ssh/id_rsa ]; then
+if [ ! -f ~/.ssh/id_ed25519 ]; then
 	echo -e "\nLeave SSH key blank, enter desired SSH password.\n"
-	ssh-keygen -q -t rsa -b 4096 -C "GitHub: Kam Lasater <$EMAIL>"
+	ssh-keygen -q -t ed25519 -b 4096 -C "GitHub: Kam Lasater <$EMAIL>"
 fi
 
 eval "$(ssh-agent -s)"
@@ -45,12 +45,12 @@ cat >>~/.ssh/config <<'EOF'
 Host *
  AddKeysToAgent yes
  UseKeychain yes
- IdentityFile ~/.ssh/id_rsa
+ IdentityFile ~/.ssh/id_ed25519
 EOF
 
-ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/id_ed25519
 
-KEY_VALUE=$(cat ~/.ssh/id_rsa.pub)
+KEY_VALUE=$(cat ~/.ssh/id_ed25519.pub)
 MACHINE_NAME=$(uname -n | sed 's/\.local//')
 KEY_NAME="$EMAIL - $MACHINE_NAME"
 
@@ -61,8 +61,8 @@ curl -X POST -H "X-GitHub-OTP: $OTP" https://api.github.com/user/keys -u "$GITHU
 	"{\"title\": \"$KEY_NAME\", \"key\": \"$KEY_VALUE\"}"
 
 # Clone and prep next step
-mkdir -p ~/github
-cd ~/github
+mkdir -p ~/git
+cd ~/git
 git clone git@github.com:seekayel/laptop-install.git
 
 echo "Now just run:
