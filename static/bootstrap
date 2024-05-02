@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+
+# Hello! Welcome to my bootstrap script
+#
+# How to use:
+# > bash <(curl -s https://kamlasater.com/bootstrap) | tee "bootstrap-$(date +%Y%m%d-%H%M).log"
+# > ...something something
+# > profit!
+
+# Install XCode command line utils
+if xcode-select -p >/dev/null; then
+	echo "XCode Commandline tools already installed. Skipping."
+else
+	echo "Installing XCode Commandline tools"
+	xcode-select --install
+fi
+
+# Fail on error after this point
+set -e
+
+# Set computer name
+CURRENT_NAME=$(uname -n | sed 's/\.local//')
+echo "Current computer name [$CURRENT_NAME]"
+read -r -p "Pick a computer name: " COMPUTER_NAME
+
+if [ "$COMPUTER_NAME" -ne "$CURRENT_NAME" ]; then
+	scutil --set ComputerName "$COMPUTER_NAME"
+fi
+
+# Install Hombrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install git
+
+# Install ssh keys for github
+EMAIL="ckl@seekayel.com"
+GITHUB_USER="seekayel"
+if [ ! -f ~/.ssh/id_rsa ]; then
+	echo -e "\nLeave SSH key blank, enter desired SSH password.\n"
+	ssh-keygen -q -t rsa -b 4096 -C "GitHub: Kam Lasater <$EMAIL>"
+fi
+
+eval "$(ssh-agent -s)"
+
+cat >>~/.ssh/config <<'EOF'
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+EOF
+
+ssh-add -K ~/.ssh/id_rsa
+
+KEY_VALUE=$(cat ~/.ssh/id_rsa.pub)
+MACHINE_NAME=$(uname -n | sed 's/\.local//')
+KEY_NAME="$EMAIL - $MACHINE_NAME"
+
+echo -e "\nWait for fresh MFA code, enter MFA code & GitHub password before it expires.\n"
+read -r -p "$GITHUB_USER($EMAIL) mfa: " OTP
+
+curl -X POST -H "X-GitHub-OTP: $OTP" https://api.github.com/user/keys -u "$GITHUB_USER" -d \
+	"{\"title\": \"$KEY_NAME\", \"key\": \"$KEY_VALUE\"}"
+
+# Clone and prep next step
+mkdir -p ~/github
+cd ~/github
+git clone git@github.com:seekayel/laptop-install.git
+
+echo "Now just run:
+
+./laptop-install/init.sh"
