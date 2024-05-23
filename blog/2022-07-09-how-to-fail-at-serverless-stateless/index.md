@@ -1,6 +1,8 @@
 ---
 title: 'How to Fail at Serverless: Serverless is Stateless'
 date: "2022-07-09"
+slug: how-to-fail-at-serverless-stateless
+authors: [kam]
 tags:
   - How to Fail at Serverless
   - tech
@@ -22,7 +24,7 @@ All the architecture posts talk about serverless as stateless computing. How ser
 
 I can set some parameters to manage the maximum and minimum number of threads and AWS would handle all the hard work of hosting, spinning up, spinning down and networking the instances together. Awesome-sauce.
 
-![Momento I don't Remember](./img/i-dont-remember.gif)
+![Momento I don't Remember](./i-dont-remember.gif)
 
 Well, almost...
 
@@ -47,7 +49,7 @@ Everything works great until... inconsistent out of disk space errors, or no spa
 
 Periodically a step function run will fail due to a Lambda invoke failing on no space left on device (or similar depending on os and language). Running the same file in dev/test doesn't reproduce the error. Re-running the step function in production succeeds.
 
-![Lambda Pac Man](./img/lambda-pac-man.png)
+![Lambda Pac Man](./lambda-pac-man.png)
 
 ### Solution
 
@@ -59,7 +61,7 @@ Nothing quite like shipping code copy-pasted from Stack Overflow. Nice.
 
 Success! Party!
 
-![Leo says congrats to you](./img/leo-congrats.gif)
+![Leo says congrats to you](./leo-congrats.gif)
 
 until... wait what? out of memory errors? WTF!
 
@@ -90,7 +92,7 @@ Expand the IAM role permissions to allow the lambda permission to update itself 
 
 After completing the work of an invoke, call the lambda api to set an environment variable to a random value. We dubbed this the "self-immolation" solution.
 
-![Lambda Self Immolation](./img/lambda-self-immolation.png)
+![Lambda Self Immolation](./lambda-self-immolation.png)
 
 Hacky? Yeah.
 

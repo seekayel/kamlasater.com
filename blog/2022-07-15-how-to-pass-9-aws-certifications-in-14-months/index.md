@@ -1,15 +1,19 @@
 ---
 title: 'How to Pass 9 AWS Certifications in 14 Months'
 date: "2022-07-15"
+slug: how-to-pass-9-aws-certifications-in-14-months
+authors: [kam]
 tags:
-  - AWS
+  - aws
   - tech
 description: Here is how to pass 9 AWS certification tests in 14 months.
 ---
 
-![A List of My Certifications](/static/img/certification-list.png)
+![A List of My Certifications](./certification-list.png)
 
 Here is how I passed 9 AWS certification tests in 14 months. Oddly the practice testing is not the most critical step. All of these steps are needed. Let me know if you try them out and how they work for you.
+
+<!-- truncate -->
 
 # tldr: Process
 
@@ -44,6 +48,9 @@ My **WHY** was:
 # Which
 
 AWS is constantly changing the line up of their certifications. Depending on the current offering and your skills you may want to pick a different starting point.
+
+
+![Certification Path as of 2022](./aws-certification-path.png)
 
 I only picked the next test or two at a time. This was my order:
 

@@ -1,6 +1,8 @@
 ---
 title: How to Debug
 date: "2022-06-08"
+slug: how-to-debug
+authors: [kam]
 tags:
   - tech
 ---

@@ -1,6 +1,8 @@
 ---
 title: 'How to Get Your First Developer Job'
 date: "2022-07-22"
+slug: how-to-get-your-first-developer-job
+authors: [kam]
 tags:
   - tech
 description: A few tips to increasing your odds of landing your first professional developer job.
