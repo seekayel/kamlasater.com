@@ -45,21 +45,25 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        gtag: {
-          trackingID: 'G-YBRTB6XD7P',
-          anonymizeIP: true,
-        },
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-YBRTB6XD7P',
+        anonymizeIP: false,
+      },
+    ]
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Kam Lasater | Software Entrepreneur',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'My name Kam as a logo',
         src: 'img/logo.svg',
       },
       items: [
