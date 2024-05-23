@@ -1,24 +1,45 @@
 # kamlasater.com
 
-Personal resume site, blog and random playground hosted at: https://kamlasater.com (https://rich-gray-seal-fez.cyclic.app)
+Personal resume site, blog and random playground hosted at: https://kamlasater.com
 
-Inspired by: https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Dev
+### Installation
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```
+$ yarn
 ```
 
-## Build
+### Local Development
 
-To create a production version of your app:
-
-```bash
-npm run build
+```
+$ yarn start
 ```
 
-You can preview the production build with `npm run preview`.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
