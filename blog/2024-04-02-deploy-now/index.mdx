@@ -1,6 +1,8 @@
 ---
 title: The Answer is to Deploy Now
+slug: deploy-now
 date: "2024-04-02"
+authors: [kam]
 tags:
   - tech
   - software process
@@ -9,39 +11,36 @@ tags:
 In software value is produced by features running in production. Let’s assume a team delivers on average one feature per unit of time. We will call it team velocity. We can plot their feature delivery curve.
 
 
-<img
-  alt="Team velocity average linear graph"
-  src="/posts/deploy-now/00-velocity-graph.png"
-  width="550px"
->
+import graph_0 from './00-velocity-graph.png';
+
+<div style={{backgroundColor:'white', display: 'inline-block'}}>
+  <img src={graph_0} width="550px" alt="Average team velocity" />
+</div>
 
 Average team velocity doesn’t tell the whole story. Features are deployed on some cadence which makes the feature curve for a team a stair step versus a continuous line. Two teams can have the same average velocity but different deployment cadences. Consider a team that deploys every unit of time and another that deploys every two units of time.
 
 
-<img
-  alt="Team velocity average linear graph"
-  src="/posts/deploy-now/01-velocity-graph.png"
-  width="550px"
->
+import graph_1 from './01-velocity-graph.png';
+
+<div style={{backgroundColor:'white', display: 'inline-block'}}>
+  <img src={graph_1} width="550px" alt="Example banner" />
+</div>
 
 The blue team deploys one unit of features every one unit of time. The red team deploys two units of features every two units. Each has an average feature velocity of one feature unit per unit of time.
 
+import graph_2 from './02-velocity-graph.png';
 
-<img
-  alt="Team velocity average linear graph"
-  src="/posts/deploy-now/02-velocity-graph.png"
-  width="550px"
->
+<div style={{backgroundColor:'white', display: 'inline-block'}}>
+  <img src={graph_2} width="550px" alt="Example banner" />
+</div>
 
 The value produced to the organization by these two teams is the area under their feature curves.
 
+import graph_3 from './03-velocity-graph.png';
 
-
-<img
-  alt="Team velocity average linear graph"
-  src="/posts/deploy-now/03-velocity-graph.png"
-  width="550px"
->
+<div style={{backgroundColor:'white', display: 'inline-block'}}>
+  <img src={graph_3} width="550px" alt="Example banner" />
+</div>
 
 
 It is clear that the blue team captures one quarter (25%) more value per unit of time. Value is positively correlated with deployment frequency.
