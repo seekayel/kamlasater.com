@@ -1,13 +1,14 @@
 ---
 title: 6 Command line Tools All Experts Know
-date: "2022-06-15"
-tags:
-  - tech
-  - cli
+slug: 6-Command-line-Tools-All-Experts-Know
+authors: kam
+tags: [tech, cli]
 ---
 
 I work on Mac OSX and Linux command line environments. My tool kit is shaped by the needs I have. This is my tool box of tools that work with almost any command and help me go from just using the command line to being an expert.
 Wow, your friends and colleagues. These tools make every other command at the command line more powerful.
+
+<!-- truncate -->
 
 ## `|` (aka pipe)
 
