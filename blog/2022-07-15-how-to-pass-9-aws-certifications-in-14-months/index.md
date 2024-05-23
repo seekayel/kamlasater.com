@@ -3,6 +3,7 @@ title: 'How to Pass 9 AWS Certifications in 14 Months'
 date: "2022-07-15"
 slug: how-to-pass-9-aws-certifications-in-14-months
 authors: [kam]
+image: ./certification-list.png
 tags:
   - aws
   - tech

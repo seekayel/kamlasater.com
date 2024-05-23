@@ -12,6 +12,8 @@ I've hired roughly 30 developers where the job would be their first professional
 
 None of this is certainly going to get you hired, the goal is to just improve your odds. Also, each hiring manager is different. Sometimes the person doing the screening and first line interview may not have ever coded. This advice is much geared to increasing your odds with a hiring manager who is technical.
 
+<!-- truncate -->
+
 ## Github timeline
 
 At the screening stage one powerful hack was to look at the applicat's Github timeline. All else being equal, I probably could have done ok just hiring the individuals with more activity in our target language.

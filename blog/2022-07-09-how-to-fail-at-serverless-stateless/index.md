@@ -11,7 +11,9 @@ tags:
 
 This blog series is an extended version of a talk I gave at [Serverless Days NYC 2022](https://nyc.serverlessdays.io/). The goal is to share ways that a "friend of mine" has failed at serverless to help level up the community. Just as the transportation industry shares accident report analysis with the whole industry to improve safety, we in the software community need to do the same. This is my attempt to do that.
 
-I'm sure there is some product X that has feature Y that fixes issue Z. I either didn't know about it at the time, didn't have the budget, couldn't get it through vendor/security review, product wouldn’t schedule it with our engineers or it didn't comply with enterprise architecture's plan for our software roadmap. As some guy once said: “You go to production with the tools you have, not the tools you want.”
+<!-- truncate -->
+
+I'm sure there is some product X that has feature Y that fixes issue Z. I either didn't know about it at the time, didn't have the budget, couldn't get it through vendor/security review, product wouldn’t schedule it with our engineers or it didn't comply with enterprise architecture's plan for our software roadmap. As some guy once said: "You go to production with the tools you have, not the tools you want."
 
 Note:
 

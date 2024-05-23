@@ -12,6 +12,8 @@ How do I debug a bug that is intermittent? How do I debug something that works s
 
 Here are some reminders to myself next time I encounter a baffling debugging session.
 
+<!-- truncate -->
+
 ## Contents
 
 ## Choose Learning

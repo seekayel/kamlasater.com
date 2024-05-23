@@ -2,6 +2,7 @@
 title: The Answer is to Deploy Now
 slug: deploy-now
 date: "2024-04-02"
+image: ./03-velocity-graph.png
 authors: [kam]
 tags:
   - tech
@@ -10,12 +11,13 @@ tags:
 
 In software value is produced by features running in production. Let’s assume a team delivers on average one feature per unit of time. We will call it team velocity. We can plot their feature delivery curve.
 
-
 import graph_0 from './00-velocity-graph.png';
 
 <div style={{backgroundColor:'white', display: 'inline-block'}}>
   <img src={graph_0} width="550px" alt="Average team velocity" />
 </div>
+
+<!-- truncate -->
 
 Average team velocity doesn’t tell the whole story. Features are deployed on some cadence which makes the feature curve for a team a stair step versus a continuous line. Two teams can have the same average velocity but different deployment cadences. Consider a team that deploys every unit of time and another that deploys every two units of time.
 

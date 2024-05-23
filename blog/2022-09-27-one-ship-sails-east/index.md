@@ -3,6 +3,7 @@ title: One Ship Sails East
 date: "2022-09-27"
 slug: one-ship-sails-east
 authors: [kam]
+image: ./one-sails-east-the-other-west.png
 tags:
   - poetry
 ---
@@ -13,6 +14,8 @@ tags:
 # Tis The Set Of The Sail or One Ship Sails East
 
 by [Ella Wheeler Wilcox](https://en.wikipedia.org/wiki/Ella_Wheeler_Wilcox)
+
+<!-- truncate -->
 
 <br/>
 But to every mind there openeth,<br/>

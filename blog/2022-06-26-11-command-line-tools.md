@@ -2,7 +2,7 @@
 title: 11 Command Line Tools I Couldn't Work Without
 date: "2022-06-26"
 slug: 11-command-line-tools-I-couldnt-work-without
-authors: kam
+authors: [kam]
 tags:
   - tech
   - cli
