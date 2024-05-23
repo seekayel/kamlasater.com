@@ -37,12 +37,11 @@ const config: Config = {
       {
         docs: false,
         blog: {
-          showReadingTime: true,
           blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'Posts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: 'Blog',
+          blogDescription: "Kam Lasater's blog about software development, entrepreneurship, and more.",
+          showReadingTime: true,
+          readingTime: ({content, frontMatter, defaultReadingTime}) => defaultReadingTime({content, options: {wordsPerMinute: 200}}),
         },
         theme: {
           customCss: './src/css/custom.css',
