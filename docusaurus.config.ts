@@ -63,7 +63,7 @@ const config: Config = {
     defaultMode: 'dark',
     respectPrefersColorScheme: true,
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/2024-gh-stats-social-card.png',
     navbar: {
       title: '',
       hideOnScroll: false,
