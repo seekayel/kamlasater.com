@@ -3,10 +3,7 @@ title: 'How to Fail at Serverless: Serverless is Stateless'
 date: "2022-07-09"
 slug: how-to-fail-at-serverless-stateless
 authors: [kam]
-tags:
-  - How to Fail at Serverless
-  - tech
-  - serverless
+tags: [How to Fail at Serverless, tech, serverless, failure]
 ---
 
 This blog series is an extended version of a talk I gave at [Serverless Days NYC 2022](https://nyc.serverlessdays.io/). The goal is to share ways that a "friend of mine" has failed at serverless to help level up the community. Just as the transportation industry shares accident report analysis with the whole industry to improve safety, we in the software community need to do the same. This is my attempt to do that.
