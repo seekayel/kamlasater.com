@@ -1,17 +1,17 @@
 ---
 title: Using Slack as an Searchable Event Stream Database
+description: When building a startup I rarely have the time to build software in the way I think of as correct. I find particular pleasure when simple solutions can be "good enough" using Slack as a searchable event stream DB is one of those solutions.
 slug: slack-as-searchable-db
-authors: kam
-tags:
-  - tech
-  - startups
+authors: [kam]
+tags: [tech, startups]
+image: ./slack-search-redacted.jpg
 ---
 
 ![Slack Search Results](./slack-search-redacted.jpg)
 
 # Using Slack as an Searchable Event Stream Database
 
-When building a startup I rarely have the time to build software in the way I think of as correct. In these situations I find particular pleasure when simple solutions can be “good enough”. Best yet is when one of these solutions holds up to increasing numbers of users, employees and use cases. One pattern that manages all of these is using Slack as a searchable event stream DB.
+When building a startup I rarely have the time to build software in the way I think of as correct. In these situations I find particular pleasure when simple solutions can be "good enough". Best yet is when one of these solutions holds up to increasing numbers of users, employees and use cases. One pattern that manages all of these is using Slack as a searchable event stream DB.
 
 <!-- truncate -->
 

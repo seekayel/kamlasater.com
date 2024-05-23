@@ -3,9 +3,12 @@ title: How to Debug
 date: "2022-06-08"
 slug: how-to-debug
 authors: [kam]
-tags:
-  - tech
+tags: [tech]
+image: ./bugs.jpg
 ---
+
+![Bugs](./bugs.jpg)
+
 We all hit bugs that feel impossible to diagnose. The hardest ones to debug are intermittent or inconsistent. How do I fix what works sometimes? If a line of code always breaks then the fix is direct. The system is linear. The action leads to a failure.
 
 How do I debug a bug that is intermittent? How do I debug something that works sometimes?
