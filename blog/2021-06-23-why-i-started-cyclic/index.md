@@ -11,6 +11,8 @@ image: ./cyclic-logo-original.png
 
 At my last company we had a micro-services architecture. We also focused on recruiting developers who were smart and dedicated, but not yet experienced. When they started we would task them to add some new functionality. This would require on the order of perhaps 20 to 50 lines of business logic.
 
+<!-- truncate -->
+
 However this would require 500 to 1000 lines of infrastructure code. Between project setup, framework config and infrastructure as code yaml, the actual purpose of the service was drowned out. The gearing ratio was all wrong.
 
 When these developers went to build and deploy, they would encounter more troubles. If you have ever worked with AWS you will know that CloudFormation is not known for the predictability or clarity of its errors. If you have worked with API Gateway and Lambda you will know how quickly you can get lost in a dark thicket of abstractions and frameworks, each blurring and bending into the the next.
