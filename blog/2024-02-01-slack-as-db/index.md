@@ -1,20 +1,19 @@
 ---
 title: Using Slack as an Searchable Event Stream Database
-date: "2024-02-01"
+slug: slack-as-searchable-db
+authors: kam
 tags:
   - tech
   - startups
 ---
 
-<img
-  alt="Slack Search Results"
-  src="/posts/slack-search-redacted.jpg"
-  width="550px"
->
+![Slack Search Results](./slack-search-redacted.jpg)
 
 # Using Slack as an Searchable Event Stream Database
 
 When building a startup I rarely have the time to build software in the way I think of as correct. In these situations I find particular pleasure when simple solutions can be “good enough”. Best yet is when one of these solutions holds up to increasing numbers of users, employees and use cases. One pattern that manages all of these is using Slack as a searchable event stream DB.
+
+<!-- truncate -->
 
 This solution ticks all the boxes for me. It is simple to start using since slack is one of the first integrations built by most SaaS products. Adding new employees is easy as access control is delegated to Slack’s user management. I can start with notifications on then turn them down as activity ramps up. New third party systems can be added by adding additional channels. Historical search is enabled by channel filtering and selecting a decent message format.
 

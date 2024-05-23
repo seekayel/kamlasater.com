@@ -1,12 +1,16 @@
 ---
 title: 11 Command Line Tools I Couldn't Work Without
 date: "2022-06-26"
+slug: 11-command-line-tools-I-couldnt-work-without
+authors: kam
 tags:
   - tech
   - cli
 ---
 
 I work on mac OSX and linux command line environments. My tool kit is shaped by the needs I have. There may be similar tools for powershell or other, I'm just not aware of them.
+
+<!-- truncate -->
 
 ## 1. `pbpaste` and `pbcopy`
 
