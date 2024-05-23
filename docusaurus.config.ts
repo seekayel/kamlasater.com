@@ -18,6 +18,8 @@ const config: Config = {
   organizationName: 'seekayel', // Usually your GitHub org/user name.
   projectName: 'kamlasater.com', // Usually your repo name.
 
+  trailingSlash: true,
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -33,12 +35,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -62,15 +59,9 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/seekaye/',
           label: 'GitHub',
           position: 'right',
         },
@@ -79,15 +70,6 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
