@@ -58,13 +58,17 @@ const config: Config = {
     ]
   ],
   themeConfig: {
+    defaultMode: 'dark',
+    respectPrefersColorScheme: true,
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Kam Lasater | Software Entrepreneur',
+      title: '',
+      hideOnScroll: false,
       logo: {
         alt: 'My name Kam as a logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-dark.svg',
+        srcDark: 'img/logo-light.svg',
       },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},
