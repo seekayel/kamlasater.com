@@ -1,7 +1,7 @@
 ---
 title: 'Write Shitty Code - why you should and feel good about it'
 slug: 'write-shitty-code'
-summary: 'Why you should write MORE shitty code and feel good about it.'
+description: 'Why you should write MORE shitty code and feel good about it.'
 date: "2022-02-23"
 authors: [kam]
 image: ./shitty-code-v2.png

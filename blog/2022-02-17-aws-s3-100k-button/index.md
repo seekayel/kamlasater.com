@@ -1,7 +1,7 @@
 ---
 title: 'AWS S3: Why sometimes you should press the $100k button'
 slug: 'aws-s3-why-sometimes-you-should-press-the-100k-dollar-button'
-summary: ''
+description: 'Why sometimes with AWS S3 spending $100k is the cheapest option.'
 date: "2022-02-17"
 authors: [mike-korostelev, kam]
 tags: [aws, failure, cyclic]

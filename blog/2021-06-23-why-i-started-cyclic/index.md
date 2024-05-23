@@ -1,7 +1,7 @@
 ---
 title: 'Why I Started Cyclic'
 slug: 'why-i-started-cyclic'
-summary: 'Choosing to start a company is a combination of an analytical and subjective decision. Commitment is required by both your head and your heart.'
+description: 'Choosing to start a company is a combination of an analytical and subjective decision. Commitment is required by both your head and your heart.'
 date: "2021-06-23"
 authors: [kam]
 tags: [cyclic]
