@@ -1,10 +1,8 @@
 ---
 title: AWS Resource Tags
-date: "2022-10-03"
-tags:
-  - AWS
-  - engineering
-  - cloudformation
+draft: true
+authors: [kam]
+tags: [aws, engineering, cloudformation]
 ---
 
 AWS is incredibly powerful. Their products are awesome. Their ability to execute is unparallelled.
