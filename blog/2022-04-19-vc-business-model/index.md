@@ -4,7 +4,7 @@ slug: 'the-vc-business-model-and-why-vcs-invest'
 description: 'The majority of the confusion or difficulty I had raising Venture Capital was that I didn’t fully understand the VC business model. I didn’t understand the individual investors and their incentives. I didn’t appreciate the incentives for the fund itself. Nor did I understand what the fund’s investors (Limited Partners aka LPs) were expecting. Hopefully this will help you understand what I didn’t.'
 date: "2022-04-19"
 authors: [kam]
-tags: [cyclic, VC]
+tags: [cyclic, VC, startups]
 image: ./vc-triangle.png
 ---
 

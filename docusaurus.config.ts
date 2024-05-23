@@ -74,7 +74,7 @@ const config: Config = {
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/seekaye/',
+          href: 'https://github.com/seekayel/',
           label: 'GitHub',
           position: 'right',
         },

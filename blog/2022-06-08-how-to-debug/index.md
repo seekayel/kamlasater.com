@@ -1,9 +1,10 @@
 ---
 title: How to Debug
 date: "2022-06-08"
+description: "Sometimes when you hit a bug you don't know how or where to start. This is a starting point when you don't know where to start."
 slug: how-to-debug
 authors: [kam]
-tags: [tech]
+tags: [cyclic, software, tech]
 image: ./bugs.jpg
 ---
 
