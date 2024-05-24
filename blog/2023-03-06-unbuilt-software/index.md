@@ -4,7 +4,7 @@ slug: 'the-unbuilt-software-trap'
 description: 'There are three types of software that any company runs. The forth type is never built.'
 date: "2023-03-06"
 authors: [kam]
-tags: [tech, software]
+tags: [tech, software, cyclic]
 image: ./unbuilt.jpg
 ---
 

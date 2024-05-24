@@ -3,7 +3,7 @@ title: 'How to go from 0 to 1 - Growing users for a new product or service'
 slug: 'how-to-go-from-0-to-1'
 description: 'Going from 0 to 1. How to find the first user for your product.'
 authors: [kam]
-tags: [startups, cyclic]
+tags: [startups, growth, cyclic]
 image: ./braden-collum-9HI8UJMSdZA-unsplash.jpg
 ---
 
