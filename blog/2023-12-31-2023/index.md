@@ -1,14 +1,16 @@
 ---
-title: '2023'
+title: '2023 - A Look Back'
 slug: '2023'
 description: 'A look back at 2023'
 date: "2023-12-31"
 authors: [kam]
-tags: [personal]
+tags: [cyclic]
 image: ./2023-github-contributions.png
 ---
 
 ![2023 GitHub Contribution Graph](./2023-github-contributions.png)
+
+<!-- truncate -->
 
 ## Timeline
 
