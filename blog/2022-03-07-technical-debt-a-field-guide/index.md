@@ -10,7 +10,7 @@ image: ./tech-debt-as-seen-by-20220309.png
 
 ![Technical debt as seen by meme](./tech-debt-as-seen-by-20220309.png)
 
-I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](../we-sound-like-idiots-when-we-talk-about-technical-debt) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say "technical debt".
+I have written previously about how we, as technical professionals, [misuse the term debt and end up sounding like idiots](/blog/2022-02-08-we-sound-like-idiots/index.md) in a business context. This is meant as a companion, to help better communicate, to our non-professional colleagues, what we mean when we say "technical debt".
 
 ‍<!-- truncate -->
 As a software professional for almost 20 years (do I get a watch or plaque soon?) I've had more passionate discussions about technical debt than any other topic. It is right up there with the iconic 3rd rail topics: Tabs-v-Spaces, Mac-v-Windows, Java-v-Python and type systems.
