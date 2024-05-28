@@ -49,5 +49,3 @@ If the value of software systems is distributed as a power law then to increase 
 
 ### A way out
 One way to increase the number of experiments is to enable the largest number of individuals in your organization to conceive of and implement these experiments. Each organization has some individuals who are able to do so without assistance. A system that enables them to do so with less friction and less difficulty will increase the frequency that they experiment. Lowering the difficulty will also increase the number of individuals in your organization that are able to experiment. This means creating a way for individuals to rapidly prototype new ideas outside of the usual constraints of Tier 1 systems, but in a way that they can evolve into Tier 1 systems. This capability is a strategic advantage to an organization. Having an experimentation system will create long term value for the organization.
-
-__Has your software team found a way to succeed at Tier 4? Visit us in our [Discord community](https://discord.cyclic.sh) and share your successes.__
