@@ -1,6 +1,7 @@
 ---
-layout: post
 title: "Adding Syntax Highlighting to Anki Flash Cards"
+authors: [kam]
+tags: [tech]
 ---
 # What is [Anki][anki]?
 Anki is an "intelligent" flash card system. When you review material it takes the "difficulty" you have in recalling the material. It uses this difficulty to predict when to review the material again. Thus material that you have already mastered is reviewed less frequently and material you are working on is brought back faster.
