@@ -1,7 +1,7 @@
 ---
-layout: post
-title: "Book Notes: How to Create a Mind"
-categories: book
+title: "Book: How to Create a Mind"
+authors: [kam]
+tags: [book]
 ---
 
 # [How to Create a Mind: The Secret of Human Thought Revealed][amazon-link]
