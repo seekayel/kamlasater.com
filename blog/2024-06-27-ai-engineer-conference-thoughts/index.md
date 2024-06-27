@@ -4,10 +4,10 @@ description: 'Thoughts and Such'
 date: "2024-06-27"
 authors: [kam]
 tags: [engineering, ai]
-# image: ./tag-compatibility.jpeg
+image: ./ai-engineer.webp
 ---
 
-<!-- ![Tag compatibility grid](./tag-compatibility.jpeg) -->
+![Futurisic retro view of AI Engineer World Fair Expo Hall](./ai-engineer.webp)
 
 Interesting conference vibes. There were a few really interesting people doing interesting things. There were also a whole raft of really ambitious people wanting to tell you about the product/company they were launching.
 
