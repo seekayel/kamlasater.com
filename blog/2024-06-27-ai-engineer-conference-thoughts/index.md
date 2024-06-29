@@ -51,3 +51,7 @@ Also in light of the ease of writing single use scripts via llms this also still
   > Use tools in preference to unskilled help to lighten a programming task, even if you have to detour to build the tools and expect to throw some of them out after you've finished using them.
 
 I feel that I need to build out my commandline tooling/facility with llms and the text/prompt piping. One tool that I've found useful so far is [llm (cli for calling llms)](https://github.com/simonw/llm). Another technic is to slurp all the sub-files in a directory into the context and submit those as part of the prompt (hat tip to [Manuel Odendahl](https://github.com/wesen)).
+
+## LLMs assume the have the information needed to solve the problem
+
+Inherently how they are trained, LLMs assume they have the context needed to predict the next token. This means they have no reasoning layer to determine if they have been given a task that would be best solved by first acquiring more information.
