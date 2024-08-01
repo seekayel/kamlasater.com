@@ -35,9 +35,19 @@ function IndexContent() {
                         <br />
 
                         <div>
+                            <h3>Manufactured (<a href="//manufactured.com/" target="_blank" rel="noopener noreferrer" className="link">manufactured.com/</a>)</h3>
+                            <p><b>Head of Platform</b></p>
+                            <p>Aug 2024 - present</p>
+                            <ul>
+                                <li>Responsible for internal and external software</li>
+                            </ul>
+                        </div>
+                        <br />
+
+                        <div>
                             <h3>Cyclic (<a href="//www.cyclic.sh" target="_blank" rel="noopener noreferrer" className="link">www.cyclic.sh</a>)</h3>
                             <p><b>CEO / Cofounder</b></p>
-                            <p>January 2021 - present</p>
+                            <p>January 2021 - May 2024</p>
                             <ul>
                                 <li>Full stack javascript/python apps</li>
                                 <li>From idea to 150k+ developers</li>
