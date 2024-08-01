@@ -23,7 +23,7 @@ CURRENT_NAME=$(uname -n | sed 's/\.local//')
 echo "Current computer name [$CURRENT_NAME]"
 read -r -p "Pick a computer name: " COMPUTER_NAME
 
-if [ "$COMPUTER_NAME" -ne "$CURRENT_NAME" ]; then
+if [ "$COMPUTER_NAME" != "$CURRENT_NAME" ]; then
 	scutil --set ComputerName "$COMPUTER_NAME"
 	scutil --set HostName "$COMPUTER_NAME"
 	scutil --set LocalHostName "$COMPUTER_NAME"
