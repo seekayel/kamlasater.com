@@ -25,18 +25,27 @@ read -r -p "Pick a computer name: " COMPUTER_NAME
 
 if [ "$COMPUTER_NAME" -ne "$CURRENT_NAME" ]; then
 	scutil --set ComputerName "$COMPUTER_NAME"
+	scutil --set HostName "$COMPUTER_NAME"
+	scutil --set LocalHostName "$COMPUTER_NAME"
 fi
 
 # Install Hombrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew install git
+brew install git gh
 
-# Install ssh keys for github
-EMAIL="ckl@seekayel.com"
-GITHUB_USER="seekayel"
+# Prompt user for email, use default if no input provided
+DEFAULT_EMAIL="ckl@seekayel.com"
+read -p "Enter your email [$DEFAULT_EMAIL]: " USER_EMAIL
+EMAIL=${USER_EMAIL:-$DEFAULT_EMAIL}
+
+# Prompt user for GH user, use default if no input provided
+DEFAULT_GH_USER="seekayel"
+read -p "Enter your GH User [$DEFAULT_GH_USER]: " USER_GH_USER
+GITHUB_USER=${USER_GH_USER:-$DEFAULT_GH_USER}
+
 if [ ! -f ~/.ssh/id_ed25519 ]; then
 	echo -e "\nLeave SSH key blank, enter desired SSH password.\n"
-	ssh-keygen -q -t ed25519 -b 4096 -C "GitHub: Kam Lasater <$EMAIL>"
+	ssh-keygen -q -t ed25519 -b 4096 -C "GitHub: $GITHUB_USER <$EMAIL>"
 fi
 
 eval "$(ssh-agent -s)"
@@ -50,20 +59,27 @@ EOF
 
 ssh-add -K ~/.ssh/id_ed25519
 
-KEY_VALUE=$(cat ~/.ssh/id_ed25519.pub)
+
+TODAY=$(date +"%Y%m%d")
 MACHINE_NAME=$(uname -n | sed 's/\.local//')
-KEY_NAME="$EMAIL - $MACHINE_NAME"
+GH_KEY_TITLE="${COMPUTER_NAME} - ${EMAIL} - ${TODAY}"
 
-echo -e "\nWait for fresh MFA code, enter MFA code & GitHub password before it expires.\n"
-read -r -p "$GITHUB_USER($EMAIL) mfa: " OTP
+gh ssh-key add ~/.ssh/id_ed25519.pub --title "$GH_KEY_TITLE"
 
-curl -X POST -H "X-GitHub-OTP: $OTP" https://api.github.com/user/keys -u "$GITHUB_USER" -d \
-	"{\"title\": \"$KEY_NAME\", \"key\": \"$KEY_VALUE\"}"
+# KEY_VALUE=$(cat ~/.ssh/id_ed25519.pub)
+# MACHINE_NAME=$(uname -n | sed 's/\.local//')
+# KEY_NAME="$EMAIL - $MACHINE_NAME"
+
+# echo -e "\nWait for fresh MFA code, enter MFA code & GitHub password before it expires.\n"
+# read -r -p "$GITHUB_USER($EMAIL) mfa: " OTP
+
+# curl -X POST -H "X-GitHub-OTP: $OTP" https://api.github.com/user/keys -u "$GITHUB_USER" -d \
+# 	"{\"title\": \"$KEY_NAME\", \"key\": \"$KEY_VALUE\"}"
 
 # Clone and prep next step
-mkdir -p ~/git
-cd ~/git
-git clone git@github.com:seekayel/laptop-install.git
+# mkdir -p ~/git
+# cd ~/git
+# git clone git@github.com:seekayel/laptop-install.git
 
 echo "Now just run:
 
