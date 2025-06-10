@@ -4,10 +4,10 @@ description: 'Thoughts and Such'
 date: "2025-06-09"
 authors: [kam]
 tags: [engineering, ai]
-image: ./jr-dev.png
+image: ./jr-dev-banner.png
 ---
 
-![Junior Developer Riding the wave of AI tools](./jr-dev.png)
+![Junior Developer Riding the wave of AI tools](./jr-dev-banner.png)
 
 ## Best of Times - Worst of Times
 
