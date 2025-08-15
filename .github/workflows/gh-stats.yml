@@ -55,15 +55,15 @@ jobs:
         run: |
           mkdir -p images
           curl -sSL \
-            "http://127.0.0.1:${GH_STATS_PORT}/?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=true&show_icons=true&disable_animations=true" \
-            -o images/gh-stats.svg
-          test -s images/gh-stats.svg || (echo "Failed to produce SVG" && exit 1)
+            "http://127.0.0.1:${GH_STATS_PORT}/?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=true&show_icons=true&disable_animations=true&rank_icon=github&custom_title=Kam%20Lasater%20GitHub%20Activity" \
+            -o static/img/gh-stats-social-card.svg
+          test -s static/img/gh-stats-social-card.svg || (echo "Failed to produce SVG" && exit 1)
 
       - name: Commit & push if changed
         run: |
           # git config user.name  "github-actions[bot]"
           # git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git status
-          git add images/gh-stats.svg
+          git add static/img/gh-stats-social-card.svg
           git diff --quiet && echo "No changes" || git commit -m "chore: update GH stats image"
-          # git push
+          git push
