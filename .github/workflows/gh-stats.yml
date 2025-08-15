@@ -23,10 +23,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout stats repo (seekayel/github-readme-stats)
+      - name: Checkout stats repo (anuraghazra/github-readme-stats)
         uses: actions/checkout@v4
         with:
-          repository: seekayel/github-readme-stats
+          repository: anuraghazra/github-readme-stats
           path: github-readme-stats
           fetch-depth: 0
 
@@ -49,13 +49,13 @@ jobs:
           PORT: ${{ env.GH_STATS_PORT }}
         run: |
           node express.js &
-          npx wait-on "http://127.0.0.1:${PORT}/api"
+          npx wait-on "http://127.0.0.1:${PORT}/"
 
       - name: Render SVG into site repo
         run: |
           mkdir -p images
           curl -sSL \
-            "http://127.0.0.1:${GH_STATS_PORT}/api?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=true&show_icons=true&disable_animations=true" \
+            "http://127.0.0.1:${GH_STATS_PORT}/?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=true&show_icons=true&disable_animations=true" \
             -o images/gh-stats.svg
           test -s images/gh-stats.svg || (echo "Failed to produce SVG" && exit 1)
 
