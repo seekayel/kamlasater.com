@@ -1,0 +1,69 @@
+name: Update GH Stats Image
+
+on:
+  schedule:
+    - cron: "27 7 * * *"   # nightly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render-stats:
+    runs-on: ubuntu-latest
+
+    env:
+      # Who to render stats for (defaults to repo owner)
+      GH_STATS_USERNAME: ${{ github.repository_owner }}
+      GH_STATS_PORT: "9000"
+
+    steps:
+      - name: Checkout site repo (kamlasater.com)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout stats repo (seekayel/github-readme-stats)
+        uses: actions/checkout@v4
+        with:
+          repository: seekayel/github-readme-stats
+          path: github-readme-stats
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps for stats server
+        working-directory: github-readme-stats
+        run: |
+          npm ci
+          # ensure these tiny runtime deps exist locally for the server flow
+          npm i --no-save express wait-on
+
+      - name: Start local stats server
+        working-directory: github-readme-stats
+        env:
+          PAT_1: ${{ secrets.GH_STATS_PAT }}   # classic PAT with repo, read:org, user; SSO-authorized if needed
+          PORT: ${{ env.GH_STATS_PORT }}
+        run: |
+          node express.js &
+          npx wait-on "http://127.0.0.1:${PORT}/api"
+
+      - name: Render SVG into site repo
+        run: |
+          mkdir -p images
+          curl -sSL \
+            "http://127.0.0.1:${GH_STATS_PORT}/api?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=true&show_icons=true&disable_animations=true" \
+            -o images/gh-stats.svg
+          test -s images/gh-stats.svg || (echo "Failed to produce SVG" && exit 1)
+
+      - name: Commit & push if changed
+        run: |
+          # git config user.name  "github-actions[bot]"
+          # git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git status
+          git add images/gh-stats.svg
+          git diff --quiet && echo "No changes" || git commit -m "chore: update GH stats image"
+          # git push
