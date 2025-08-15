@@ -61,8 +61,8 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          # git config user.name  "github-actions[bot]"
-          # git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name  "Kam Lasater [gh-stats-bot]"
+          git config user.email "ckl+gh-stats-bot@seekayel.com"
           git status
           git add static/img/gh-stats-social-card.svg
           git commit -m "chore: update GH stats image"
