@@ -65,5 +65,6 @@ jobs:
           # git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git status
           git add static/img/gh-stats-social-card.svg
-          git diff --quiet && echo "No changes" || git commit -m "chore: update GH stats image"
+          git commit -m "chore: update GH stats image"
+          # git diff --quiet && echo "No changes" || git commit -m "chore: update GH stats image"
           git push
