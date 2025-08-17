@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "svg-to-png": "node bin/svg-to-png.js",
+    "svg-to-png:hq": "node bin/svg-to-png.js static/img/gh-stats-social-card.svg --high-quality",
+    "svg-to-png:puppeteer": "node bin/svg-to-png.js static/img/gh-stats-social-card.svg --puppeteer",
+    "gh-stats:png": "node bin/svg-to-png.js static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png 1200 630 --puppeteer",
     "dev": "npm run start",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -30,6 +33,7 @@
     "@docusaurus/module-type-aliases": "^3.8.1",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "puppeteer": "^24.9.0",
     "sharp": "^0.34.3",
     "typescript": "~5.4.5"
   },

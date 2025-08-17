@@ -1,10 +1,69 @@
-# kamlasater.com
+# Kam Lasater's Website
 
-Personal resume site, blog and random playground hosted at: https://kamlasater.com
+This is the source code for [kamlasater.com](https://kamlasater.com), built with Docusaurus.
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## SVG to PNG Conversion
 
-### Installation
+The repository includes an improved SVG-to-PNG conversion script that addresses common rendering issues with complex SVGs (like GitHub stats cards).
+
+### Features
+
+- **Multiple conversion methods** for different quality needs
+- **GitHub Actions ready** with proper dependency management
+- **Automatic background handling** for social media cards
+- **High-quality text rendering** for crisp, readable output
+- **No borders** - SVG fills entire PNG dimensions without distortion
+
+### Conversion Methods
+
+1. **Sharp (default)**: Fast conversion using Sharp library
+2. **High Quality**: Enhanced Sharp settings with better DPI and quality
+3. **Puppeteer**: Browser-based rendering for superior quality and font support
+
+### Usage
+
+#### Command Line
+
+```bash
+# Basic conversion
+npm run svg-to-png static/img/gh-stats-social-card.svg
+
+# High quality Sharp conversion
+npm run svg-to-png:hq
+
+# Puppeteer-based conversion (best quality)
+npm run svg-to-png:puppeteer
+
+# Convert GitHub stats specifically (no borders)
+npm run gh-stats:png
+
+# Custom parameters
+node bin/svg-to-png.js input.svg output.png 1200 630 --puppeteer
+```
+
+#### GitHub Actions
+
+The workflow automatically converts SVGs to PNGs when:
+- SVG files are pushed to the `main` branch
+- Manually triggered with custom parameters
+
+#### Dependencies
+
+All dependencies are managed in `package.json`:
+- `sharp`: Fast SVG-to-PNG conversion
+- `puppeteer`: High-quality browser-based rendering
+
+### Why Puppeteer?
+
+For complex SVGs with:
+- Custom fonts
+- CSS animations
+- Complex styling
+- Text that needs to be crisp
+
+Puppeteer renders using a real browser engine, ensuring fonts and styling render exactly as intended.
+
+## Development
 
 ```
 $ yarn
