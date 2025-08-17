@@ -64,7 +64,7 @@ jobs:
           # Install dependencies for SVG-to-PNG conversion
           npm ci
           # Convert to PNG using Puppeteer for best quality
-          node bin/svg-to-png.js static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png 1200 630 --puppeteer
+          node bin/svg-to-png.js static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png 1200 630
 
       - name: Commit & push if changed
         run: |
