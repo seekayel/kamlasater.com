@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Kam Lasater GitHub Activity, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 10, Total Commits  : 6083, Total PRs: 573, Total Issues: 66, Contributed to (last year): 22</desc>
+        <desc id="descId">Total Stars Earned: 10, Total Commits  : 6086, Total PRs: 573, Total Issues: 66, Contributed to (last year): 22</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 74.33330891959936;
+        stroke-dashoffset: 74.33202535303778;
       }
     }
   
