@@ -2,7 +2,7 @@ name: Update GH Stats Image
 
 on:
   schedule:
-    - cron: "27 7 * * *"   # nightly
+    - cron: "47 23 * * *"   # nightly
   workflow_dispatch:
 
 permissions:
@@ -35,6 +35,10 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Set current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
       - name: Install deps for stats server
         working-directory: github-readme-stats
         run: |
@@ -55,7 +59,7 @@ jobs:
         run: |
           mkdir -p images
           curl -sSL \
-            "http://127.0.0.1:${GH_STATS_PORT}/?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=true&show_icons=true&disable_animations=true&rank_icon=github&custom_title=Kam%20Lasater%20GitHub%20Activity" \
+            "http://127.0.0.1:${GH_STATS_PORT}/?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=false&show_icons=true&disable_animations=true&rank_icon=github&custom_title=Kam%20Lasater%20GitHub%20Activity%20v${{ steps.date.outputs.date }}" \
             -o static/img/gh-stats-social-card.svg
           test -s static/img/gh-stats-social-card.svg || (echo "Failed to produce SVG" && exit 1)
 
