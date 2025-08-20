@@ -74,8 +74,25 @@ jobs:
         run: |
           git config user.name  "Kam Lasater [gh-stats-bot]"
           git config user.email "ckl+gh-stats-bot@seekayel.com"
+          
+          # Check current status
+          echo "=== Git status before staging ==="
           git status
+          
+          # Stage only the specific files we want to commit
           git add static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png
-          git commit -m "chore: update GH stats image"
-          # git diff --quiet && echo "No changes" || git commit -m "chore: update GH stats image"
-          git push
+          
+          # Check what's staged
+          echo "=== Git status after staging ==="
+          git status
+          
+          # Check if there are actually changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit - files are identical"
+          else
+            echo "Changes detected, committing..."
+            git commit -m "chore: update GH stats image"
+            echo "=== Git status after commit ==="
+            git status
+            git push
+          fi
