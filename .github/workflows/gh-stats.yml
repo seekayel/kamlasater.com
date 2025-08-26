@@ -63,12 +63,12 @@ jobs:
             -o static/img/gh-stats-social-card.svg
           test -s static/img/gh-stats-social-card.svg || (echo "Failed to produce SVG" && exit 1)
 
-      - name: Convert SVG to PNG
+      - name: Convert SVG to PNG with aspect-ratio preservation
         run: |
           # Install dependencies for SVG-to-PNG conversion
           npm ci
-          # Convert to PNG using Puppeteer for best quality
-          node bin/svg-to-png.js static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png 1200 630
+          # Convert to PNG using aspect-preserving script with white background
+          node bin/svg-to-png-aspect.js static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png 1200 630 "#ffffff"
 
       - name: Commit & push if changed
         run: |
