@@ -18,12 +18,18 @@ jobs:
       GH_STATS_PORT: "9000"
 
     steps:
+      - name: Check if we should run
+        id: should-run
+        run: echo "result=$(($RANDOM % 3))" >> $GITHUB_OUTPUT
+
       - name: Checkout site repo (kamlasater.com)
+        if: steps.should-run.outputs.result == 0
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Checkout stats repo (anuraghazra/github-readme-stats)
+        if: steps.should-run.outputs.result == 0
         uses: actions/checkout@v4
         with:
           repository: anuraghazra/github-readme-stats
@@ -31,15 +37,18 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node
+        if: steps.should-run.outputs.result == 0
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: Set current date
+        if: steps.should-run.outputs.result == 0
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Install deps for stats server
+        if: steps.should-run.outputs.result == 0
         working-directory: github-readme-stats
         run: |
           npm ci
@@ -47,6 +56,7 @@ jobs:
           npm i --no-save express wait-on
 
       - name: Start local stats server
+        if: steps.should-run.outputs.result == 0
         working-directory: github-readme-stats
         env:
           PAT_1: ${{ secrets.GH_STATS_PAT }}   # classic PAT with repo, read:org, user; SSO-authorized if needed
@@ -56,6 +66,7 @@ jobs:
           npx wait-on "http://127.0.0.1:${PORT}/"
 
       - name: Render SVG into site repo
+        if: steps.should-run.outputs.result == 0
         run: |
           mkdir -p images
           curl -sSL \
@@ -64,6 +75,7 @@ jobs:
           test -s static/img/gh-stats-social-card.svg || (echo "Failed to produce SVG" && exit 1)
 
       - name: Convert SVG to PNG with aspect-ratio preservation
+        if: steps.should-run.outputs.result == 0
         run: |
           # Install dependencies for SVG-to-PNG conversion
           npm ci
@@ -71,6 +83,8 @@ jobs:
           node bin/svg-to-png-aspect.js static/img/gh-stats-social-card.svg static/img/gh-stats-social-card.png 1200 630 "#ffffff"
 
       - name: Commit & push if changed
+        if: steps.should-run.outputs.result == 0
+        id: commit
         run: |
           git config user.name  "Kam Lasater [gh-stats-bot]"
           git config user.email "ckl+gh-stats-bot@seekayel.com"
