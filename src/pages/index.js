@@ -36,10 +36,12 @@ function IndexContent() {
 
                         <div>
                             <h3>Manufactured (<a href="//manufactured.com/" target="_blank" rel="noopener noreferrer" className="link">manufactured.com/</a>)</h3>
-                            <p><b>Head of Platform</b></p>
+                            <p><b>CTO</b></p>
                             <p>Aug 2024 - present</p>
                             <ul>
                                 <li>Responsible for internal and external software</li>
+                                <li>Agent builder framework with observability, tuning, and deployment</li>
+                                <li>Multiple agents built and deployed to production</li>
                             </ul>
                         </div>
                         <br />
