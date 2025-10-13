@@ -30,6 +30,11 @@ function IndexContent() {
                         <br />
                     </div>
 
+                    <div className="container agent-instructions-container">
+                        <h2>Agent Instructions</h2>
+                        <pre>hello world</pre>
+                    </div>
+
                     <div className="container experience-container">
                         <h2>Experience</h2>
                         <br />
