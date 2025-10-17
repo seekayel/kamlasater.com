@@ -41,7 +41,12 @@ const config: Config = {
           blogSidebarTitle: 'Blog',
           blogDescription: "Kam Lasater's blog about software development, entrepreneurship, and more.",
           showReadingTime: true,
-          readingTime: ({content, frontMatter, defaultReadingTime}) => defaultReadingTime({content, options: {wordsPerMinute: 200}}),
+          readingTime: ({content, defaultReadingTime, locale}) =>
+            defaultReadingTime({
+              content,
+              locale,
+              options: {wordsPerMinute: 200},
+            }),
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -72,6 +77,7 @@ const config: Config = {
         srcDark: 'img/logo-light.svg',
       },
       items: [
+        {to: '/tools', label: 'Tools', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/seekayel/',
