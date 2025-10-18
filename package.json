@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.8.1",
-    "@docusaurus/tsconfig": "3.7.0",
+    "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.7.0",
     "puppeteer": "^24.9.0",
     "raw-loader": "^4.0.2",
