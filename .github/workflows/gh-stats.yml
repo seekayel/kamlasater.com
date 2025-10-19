@@ -63,14 +63,14 @@ jobs:
           PORT: ${{ env.GH_STATS_PORT }}
         run: |
           node express.js &
-          npx wait-on "http://127.0.0.1:${PORT}/"
+          npx wait-on "http://127.0.0.1:${PORT}/api?username=${GH_STATS_USERNAME}"
 
       - name: Render SVG into site repo
         if: steps.should-run.outputs.result == 0
         run: |
           mkdir -p images
           curl -sSL \
-            "http://127.0.0.1:${GH_STATS_PORT}/?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=false&show_icons=true&disable_animations=true&rank_icon=github&custom_title=Kam%20Lasater%20GitHub%20Activity%20v${{ steps.date.outputs.date }}" \
+            "http://127.0.0.1:${GH_STATS_PORT}/api?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=false&show_icons=true&disable_animations=true&rank_icon=github&custom_title=Kam%20Lasater%20GitHub%20Activity%20v${{ steps.date.outputs.date }}" \
             -o static/img/gh-stats-social-card.svg
           test -s static/img/gh-stats-social-card.svg || (echo "Failed to produce SVG" && exit 1)
 
