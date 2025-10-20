@@ -20,7 +20,13 @@ jobs:
     steps:
       - name: Check if we should run
         id: should-run
-        run: echo "result=$(($RANDOM % 3))" >> $GITHUB_OUTPUT
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual dispatch detected; bypassing random skip."
+            echo "result=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "result=$(($RANDOM % 3))" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Checkout site repo (kamlasater.com)
         if: steps.should-run.outputs.result == 0
@@ -63,7 +69,21 @@ jobs:
           PORT: ${{ env.GH_STATS_PORT }}
         run: |
           node express.js &
-          npx wait-on "http://127.0.0.1:${PORT}/api?username=${GH_STATS_USERNAME}"
+          success=0
+          for attempt in 1 2 3; do
+            echo "Waiting for stats server (attempt ${attempt}/3)..."
+            if npx wait-on --timeout 30000 "http://127.0.0.1:${PORT}/api?username=${GH_STATS_USERNAME}"; then
+              success=1
+              break
+            fi
+            echo "wait-on attempt ${attempt} failed; retrying after short delay."
+            sleep 5
+          done
+
+          if [ "${success}" -ne 1 ]; then
+            echo "Failed to reach stats server after 3 attempts." >&2
+            exit 1
+          fi
 
       - name: Render SVG into site repo
         if: steps.should-run.outputs.result == 0
