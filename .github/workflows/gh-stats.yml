@@ -108,5 +108,15 @@ jobs:
             git commit -m "chore: update GH stats image"
             echo "=== Git status after commit ==="
             git status
-            git push
+
+            echo "=== Syncing with origin/main before push ==="
+            # Ensure we are rebased onto the latest remote main to avoid non-fast-forward errors
+            git pull --rebase origin main || {
+              echo "Rebase failed; aborting to avoid pushing inconsistent state" >&2
+              git rebase --abort
+              exit 1
+            }
+
+            echo "=== Pushing updated assets ==="
+            git push origin HEAD:main
           fi
