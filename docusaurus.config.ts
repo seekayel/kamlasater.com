@@ -77,7 +77,6 @@ const config: Config = {
         srcDark: 'img/logo-light.svg',
       },
       items: [
-        {to: '/tools', label: 'Tools', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/seekayel/',
