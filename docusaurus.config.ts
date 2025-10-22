@@ -61,7 +61,23 @@ const config: Config = {
         trackingID: 'G-YBRTB6XD7P',
         anonymizeIP: false,
       },
-    ]
+    ],
+    function webpackAliasPlugin() {
+      return {
+        name: 'webpack-alias-plugin',
+        configureWebpack() {
+          return {
+            resolve: {
+              alias: {
+                'roughjs/bin/rough': 'roughjs/bin/rough.js',
+                'roughjs/bin/generator': 'roughjs/bin/generator.js',
+                'roughjs/bin/math': 'roughjs/bin/math.js',
+              },
+            },
+          };
+        },
+      };
+    },
   ],
   themeConfig: {
     defaultMode: 'dark',
@@ -77,6 +93,7 @@ const config: Config = {
         srcDark: 'img/logo-light.svg',
       },
       items: [
+        {to: '/talks', label: 'Talks', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/seekayel/',
