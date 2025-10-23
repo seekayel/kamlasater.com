@@ -94,7 +94,6 @@ const config: Config = {
       },
       items: [
         {to: '/talks', label: 'Talks', position: 'left'},
-        {to: '/tools', label: 'Tools', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/seekayel/',
