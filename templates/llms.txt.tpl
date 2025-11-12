@@ -1,4 +1,4 @@
-# Kam Lasater | Software Entrepreneur
+# Kam Lasater | Professional Explorer
 
 > A personal site by Kam Lasater covering software, entrepreneurship, and personal projects.
 

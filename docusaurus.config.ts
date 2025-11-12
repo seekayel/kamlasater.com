@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Kam Lasater | Software Entrepreneur',
+  title: 'Kam Lasater | Professional Explorer',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
