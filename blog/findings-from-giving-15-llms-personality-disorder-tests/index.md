@@ -25,12 +25,14 @@ As AI and Agentic systems become part of our everyday life their personality wil
 
 By having a measure of the AI systems presented personality, and how that personality can be steered, we will be better able to engineer safe, effective and productive systems.
 
-## Help
+
+## Lets Chat
 
 Please get in touch if you are a:
-- social science researcher and are interested in collaborating in turning this into publications
+- social science researcher and are interested in collaborating in turning this into publication(s)
 - ai/ml researcher looking to collaborate on engineering how to steer personality with guardrails
 - conference organizer looking for a presentation of this work at your conference
 
+You can find me at [Kam Lasater](https://kamlasater.com) or ckl@seekayel.com
+
 See you in the comments.
-Kam Lasater ckl at seekayel dot com
