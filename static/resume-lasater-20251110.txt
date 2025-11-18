@@ -1,0 +1,138 @@
+---
+schema:
+  "@context": "https://schema.org"
+  "@type": "Person"
+  givenName: "Charles"
+  familyName: "Lasater"
+  additionalName: "Kam"
+  address:
+    "@type": "PostalAddress"
+    streetAddress: "766 Beacom Ln"
+    addressLocality: "Merion Station"
+    addressRegion: "PA"
+    postalCode: "19066"
+    addressCountry: "US"
+  email: "ckl@seekayel.com"
+  telephone: "+1-412-414-7537"
+  url: "https://kamlasater.com"
+  sameAs:
+    - "https://kamlasater.com"
+    - "https://github.com/seekayel"
+    - "https://www.linkedin.com/in/kamlasater/"
+---
+
+# Charles "Kam" Lasater
+
+**Location:** 766 Beacom Ln, Merion Station, PA 19066  
+**Phone:** +1-412-414-7537  
+**Email:** ckl@seekayel.com  
+**GitHub:** [github.com/seekayel](https://github.com/seekayel)  
+**LinkedIn:** [linkedin.com/in/kamlasater](https://www.linkedin.com/in/kamlasater/)  
+**Website:** [kamlasater.com](https://kamlasater.com)
+
+---
+
+## Employment
+
+### Manufactured - CTO (mfd.ai)
+**August 2024 - Present**
+
+AI Agents for inventory backed businesses: sales, finance and sourcing
+
+- Technical leadership at Series A startup
+- Lead remote team of 10 engineers across 7 timezones
+- Responsible for recruiting, onboarding and training
+- AI strategy, architecture from idea through POC to live in production
+
+### Cyclic - Cofounder (cyclic.sh)
+**January 2021 - May 2024**
+
+Serverless Platform-as-a-Service - full stack javascript/python apps
+
+- Architected/Designed/Implemented build and hosting for 150k+ users
+- Migrated core hosting infrastructure to Rust
+- Automated provisioning and management of 100's of AWS accounts
+- Fully AWS hosted serverless PaaS built by team of 2
+
+### Black Knight - Senior Development Manager
+**June 2018 - April 2020**
+
+Mortgage document data extraction and new product innovation
+
+- Serverless AI/ML product launched with 3 of top 10 US banks
+- Migrated to serverless build system
+- 9 AWS Certifications in 14 months
+- Completed PCI SAQ-d process with assessor
+- Grew Engineering team from 6 to 19 engineers (plus contractors)
+- Managed transition of Product POC to remote team of 8+ engineers
+
+### HeavyWater - CTO
+**January 2018 - June 2018**
+
+AI to classify and extract data from mortgage documents
+
+- Grew dev team from 3 to 6
+- Launched two commercial products
+- Managed AWS infrastructure and security
+- Acquired by Black Knight
+
+### LegalScience - CEO
+**April 2017 - December 2017**
+
+Legal data startup - labeling and analyzing the law
+
+- Closed first commercial data deal
+- Awarded 2+ million dollar SBIR grant
+- Implemented sales and marketing tracking tools
+- Implemented modern CICD practices
+
+### SeeClickFix - Cofounder
+**January 2008 - December 2015**
+
+Local government SaaS company selling web and mobile products
+
+- Grew company from idea to 35 employees through 3 financing rounds
+- Built first version of product as engineer
+- Recruited and grew initial engineering team
+- Managed operations, finance and human resource teams
+- Developed internal SaaS metrics and sales structure
+
+### New Haven Bank - Board Member
+**October 2012 - April 2015**
+
+FDIC insured community bank; ~$100 million in assets
+
+- Member of Audit Committee, Loan Committee and Compensation Committee
+
+### MakeHaven - Cofounder and Board Member
+**February 2012 - March 2015**
+
+Maker space in New Haven, CT
+
+- Contributed to successful IRS non-profit application
+- Grew membership to 100+
+
+### HigherOne - Software Architect
+**June 2003 - April 2010**
+
+Online bank for higher education financial aid refund disbursements
+
+- Scaled J2EE/Oracle system from 10k to 2mm banking users
+- Experienced company growth from 20 to 400+ employees and IPO
+- Led technology strategy for two acquisitions through discovery, due diligence, and integration
+
+---
+
+## Education
+
+### Carnegie Mellon University
+**Fall 1999 - Spring 2003**
+
+Bachelor of Science in Electrical and Computer Engineering
+
+---
+
+## Certifications - Active
+
+- AWS Certified Solutions Architect – Professional
+- AWS Certified DevOps Engineer – Professional

@@ -3,6 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
+  clientModules: [
+    require.resolve('./src/clientModules/fontawesome.ts'),
+  ],
   title: 'Kam Lasater | Professional Explorer',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
@@ -96,9 +99,14 @@ const config: Config = {
         {to: '/talks', label: 'Talks', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/seekayel/',
-          label: 'GitHub',
+          type: 'html',
           position: 'right',
+          value: '<a href="/resume-lasater-20251110.pdf" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link" id="navbar-resume-link">Resume</a>',
+        },
+        {
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://github.com/seekayel/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link" id="navbar-github-link">GitHub</a>',
         },
       ],
     },
