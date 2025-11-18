@@ -109,6 +109,14 @@ const config: Config = {
           title: 'Socials',
           items: [
             {
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/kamlasater',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/seekayel',
+            },
+            {
               label: 'Twitter',
               href: 'https://twitter.com/seekayel',
             },
@@ -122,8 +130,12 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/seekayel',
+              label: 'Talks',
+              href: '/talks',
+            },
+            {
+              label: 'Personality Benchmark',
+              href: 'https://www.personalitybenchmark.ai/',
             },
           ],
         },
