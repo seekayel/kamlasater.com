@@ -101,7 +101,7 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<a href="/resume-lasater-20251110.pdf" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link" id="navbar-resume-link">Resume</a>',
+          value: '<a href="/resume-lasater-kam.pdf" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link" id="navbar-resume-link">Resume</a>',
         },
         {
           type: 'html',
