@@ -24,6 +24,7 @@ const filePath = path.join(folderPath, 'index.md');
 const frontMatter = `---
 date: ${date}
 title: ${title}
+slug: ${slug}
 authors: [kam]
 tags: []
 image: ./hero-image.webp
