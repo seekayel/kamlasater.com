@@ -4,9 +4,12 @@ title: How to Learn AI
 slug: how-to-learn-ai
 authors: [kam]
 tags: [ai]
+image: ./todo-today.svg
 ---
 
-Everyone keeps asking me how to learn AI. Here's my honest answer: stop reading about it and start using it. Every day. For everything.
+Several friends have asked me recently how to learn AI. Here's my honest answer: start using it. For anything. And everything.
+
+![Todo Today: use ai, use ai, use ai](./todo-today.svg)
 
 <!-- truncate -->
 
