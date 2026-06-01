@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="20" y="20" width="320" height="240" rx="16" ry="16" fill="#ffffff" filter="url(#shadow)" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="44" y="68" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Todo Today</text>
+
+  <!-- Divider -->
+  <line x1="44" y1="86" x2="316" y2="86" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <!-- Item 1 -->
+  <rect x="44" y="106" width="22" height="22" rx="4" ry="4" fill="none" stroke="#9ca3af" stroke-width="2"/>
+  <text x="80" y="123" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#374151">use ai</text>
+
+  <!-- Item 2 -->
+  <rect x="44" y="150" width="22" height="22" rx="4" ry="4" fill="none" stroke="#9ca3af" stroke-width="2"/>
+  <text x="80" y="167" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#374151">use ai</text>
+
+  <!-- Item 3 -->
+  <rect x="44" y="194" width="22" height="22" rx="4" ry="4" fill="none" stroke="#9ca3af" stroke-width="2"/>
+  <text x="80" y="211" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#374151">use ai</text>
+</svg>
