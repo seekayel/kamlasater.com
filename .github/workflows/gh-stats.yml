@@ -93,6 +93,15 @@ jobs:
             "http://127.0.0.1:${GH_STATS_PORT}/api?username=${GH_STATS_USERNAME}&count_private=true&include_all_commits=false&show_icons=true&disable_animations=true&rank_icon=github&custom_title=Kam%20Lasater%20GitHub%20Activity%20v${{ steps.date.outputs.date }}" \
             -o static/img/gh-stats-social-card.svg
           test -s static/img/gh-stats-social-card.svg || (echo "Failed to produce SVG" && exit 1)
+          # The stats server returns HTTP 200 with an error card on failure (e.g. an
+          # expired/invalid PAT surfaces as "Downtime due to GitHub API rate limiting").
+          # Fail loudly instead of committing the error card as the social image.
+          if grep -q "Something went wrong" static/img/gh-stats-social-card.svg; then
+            echo "::error::Stats server returned an error card. Check that the GH_STATS_PAT secret is valid and unexpired."
+            grep -o '<tspan[^>]*>[^<]*' static/img/gh-stats-social-card.svg | sed 's/<[^>]*>//'
+            git checkout -- static/img/gh-stats-social-card.svg
+            exit 1
+          fi
 
       - name: Convert SVG to PNG with aspect-ratio preservation
         if: steps.should-run.outputs.result == 0
