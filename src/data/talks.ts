@@ -66,7 +66,7 @@ export const talks: Talk[] = [
     resources: [
       {
         label: 'Source code',
-        url: 'https://github.com/mfdtrade/agent-talk-2025',
+        url: 'https://github.com/seekayel/agent-talk-2025',
         type: 'code',
       },
     ],
