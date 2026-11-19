@@ -12,7 +12,11 @@ I've been programming long enough to remember code review before pull requests. 
 
 In that world most of the "review" happened in our rules of thumb. Keep modules small. Separate concerns. Hide implementation behind interfaces. Don't share mutable state. We called it clean, modular design, but what it really was is risk reduction. When something breaks in a small, well-bounded module, less breaks with it and it's easier to find.
 
-GitHub pull requests made review a step in the workflow instead of an event on the calendar. Over time the PR turned into a ritual: a human reads every line and clicks approve. With AI writing a growing share of the code, that ritual doesn't scale. I can generate more diff in an afternoon than I can carefully read in a week. So it's worth going back to first principles. What is the PR actually for?
+GitHub pull requests made review a step in the workflow instead of an event on the calendar. Over time the PR turned into a ritual: a human reads every line and clicks approve. When AI writes all the code, that ritual doesn't scale. I never reviewed the machine code the Java JIT compiler generated.
+
+The choices aren't a human reviewing every line or a YOLO slopfest. The point of review has always been risk reduction, knowledge transfer, and developing shared patterns.
+
+What risks are contained in a PR? Not all bugs are created equal.
 
 ## The cost of a defect
 
@@ -28,7 +32,7 @@ A bug that hits every user but only misaligns a button is cheap. A bug that corr
 
 ## Who handles which term
 
-CI/CD already does a good job on duration. Small changes, deployed often, with a fast rollback and someone watching the dashboards, means a bad change doesn't live in production very long. I've [written before](/blog/deploy-now) about why deploying often matters.
+Automated CI/CD already does a good job on duration. Small changes, deployed often, with a fast rollback and someone watching the dashboards, means a bad change doesn't live in production very long. I've [written before](/blog/deploy-now) about why deploying often matters.
 
 The PR is where we go after the other two. Before a change merges we want to lower how often it will fail and how bad it will be when it does. That's the job. Not "did a human read every line," but did we reduce the frequency and severity of the defects this change could introduce?
 
